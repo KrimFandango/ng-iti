@@ -1,1 +1,7 @@
-Teams should create a branch and not edit the master branch directly.
+Team members:
+Alaa Moustapha
+Dina Khaled
+Esraa Abdou
+Menna Farghaly
+Somaya Elsayed
+Walaa Zahran
