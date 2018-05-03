@@ -1,0 +1,20 @@
+{
+  "name": "ng-iti",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Esraa Abdou <esraaabdou94@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KrimFandango/ng-iti",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
