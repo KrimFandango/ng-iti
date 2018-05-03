@@ -1,0 +1,15 @@
+{
+    "headtitle":"Angular project",
+    "headPar":"This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+    "button":"Sign Up",
+    "secOne":"SecOne",
+    "img1":"assets/article-02.jpg",
+    "slide1H":"First slide label",
+    "slide1p":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    "img2":"assets/article-03.jpg",
+    "slide2H":"Second slide label",
+    "slide2p":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    "img3":"assets/article-04.jpg",
+    "slide3H":"Third slide label",
+    "slide3p":"Nulla vitae elit libero, a pharetra augue mollis interdum."
+}
