@@ -16,7 +16,7 @@
 
 <h2 class="text-center">{{homeData.secOne}}</h2>
 <hr>
-<ngb-carousel>
+<ngb-carousel class="mb-5">
     <ng-template ngbSlide>
       <img src="{{homeData.img3}}" style="width:1350px;height:500px " alt="Random first slide">
       <div class="carousel-caption">
@@ -40,7 +40,7 @@
     </ng-template>
   </ngb-carousel>
 
-
+  <app-cards></app-cards>
   <div class="bg-light">
     <p class="text-center p-5 mb-0 w-75 mx-auto">
       {{homeData.text}}

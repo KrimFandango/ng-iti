@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
+import { CardsComponent } from './cards/cards.component';
 //services
 import {QueryService} from './query.service';
 
@@ -34,6 +35,7 @@ const routes:Routes =[
     LoginComponent,
     AboutComponent,
     ContactComponent,
+    CardsComponent
   ],
   imports: [
     NgbModule.forRoot(),
