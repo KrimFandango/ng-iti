@@ -1,1 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">ANGULAR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-item nav-link" routerLink="">Home</a>
+        <a class="nav-item nav-link" routerLink="/about">About us</a>
+        <a class="nav-item nav-link" routerLink="/contact">Contact</a>
+        <button type="button" name="button" (click)="goLogin()" class="btn mx-3">Login</button>
+        <button type="button" name="button" (click)="goRegister()" class="btn">Register</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>
+
+<footer class="bg-dark">
+  <div class="container py-5 text-white">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>

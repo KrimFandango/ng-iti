@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
   homeData:Object;
-  constructor(private q:QueryService) { 
+  constructor(private q:QueryService) {
     this.homeData={};
     this.getProfileData();
   }
@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
       err => {console.log(err);},
     );
   }
+
 
   ngOnInit() {
 
