@@ -1,0 +1,19 @@
+.jumbotron{ 
+    background-image: url(head.jpg);
+    background-size: cover;
+}
+.imgNav{
+    width: 100%;
+}
+.headpar{
+    font-size: 14px;
+}
+
+@media all and (max-width:576px){
+    h3{
+        font-size: 16px;
+    }
+    .slidePar{
+        font-size: 12px;
+    }
+}

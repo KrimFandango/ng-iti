@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QueryService} from '../query.service';
-import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
   homeData:Object;
-  constructor(private q:QueryService) { 
+  constructor(private q:QueryService , private router:Router) { 
     this.homeData={};
     this.getProfileData();
   }
@@ -21,6 +21,10 @@ export class HomeComponent implements OnInit {
       this.homeData=res;},
       err => {console.log(err);},
     );
+  }
+
+  redirectTo():void{
+    this.router.navigate(['/signUp/'])
   }
 
   ngOnInit() {
