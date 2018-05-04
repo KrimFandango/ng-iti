@@ -4,7 +4,7 @@
     "id": 1,
     "title": "accusamus beatae",
     "body": " asluptates excepturi delenitiquasi asluptates excepturi deleniti ratione",
-    "url": "http://placehold.it/180x200/92c952",
+    "url": "../assets/1x.jpg",
     "thumbnailUrl": "http://placehold.it/150/92c952"
   },
   {
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "reprehenderit",
     "body": "quia molestiae repres excepturi deleniti ratione",
-    "url": "http://placehold.it/180x200/771796",
+    "url": "../assets/2x.jpg",
     "thumbnailUrl": "http://placehold.it/150/771796"
   },
   {
@@ -20,7 +20,7 @@
     "id": 3,
     "title": "officia porro",
     "body": "quptates exceasluptates excepturi delenitipturi deleniti ratione",
-    "url": "http://placehold.it/180x200/24f355",
+    "url": "../assets/3x.jpg",
     "thumbnailUrl": "http://placehold.it/150/24f355"
   },
   {
@@ -28,7 +28,7 @@
     "id": 4,
     "title": "culpa odio esse",
     "body": "quia molestiae reprehenderit quasi asluptates excepturi deleniti ratione",
-    "url": "http://placehold.it/180x200/d32776",
+    "url": "../assets/4x.jpg",
     "thumbnailUrl": "http://placehold.it/150/d32776"
   },
   {
@@ -36,7 +36,7 @@
     "id": 5,
     "title": "natus nisi omnis",
     "body": "quia molestiae reprehasluptates excepturi delenitione",
-    "url": "http://placehold.it/180x200/f66b97",
+    "url": "../assets/5x.jpg",
     "thumbnailUrl": "http://placehold.it/150/f66b97"
   },
   {
@@ -44,7 +44,7 @@
     "id": 6,
     "title": "accusamus ea aliquid",
     "body": "quia molestiae reprehenderit quasi asluptates excepturi deleniti ratione",
-    "url": "http://placehold.it/180x200/56a8c2",
+    "url": "../assets/6x.jpg",
     "thumbnailUrl": "http://placehold.it/150/56a8c2"
   }
 ]
