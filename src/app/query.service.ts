@@ -19,4 +19,8 @@ export class QueryService {
     return this.http.get(path);
   }
 
+  getContactData(path:string): Observable<any>{
+    return this.http.get(path);
+  }
+
 }
