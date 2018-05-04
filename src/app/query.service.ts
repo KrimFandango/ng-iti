@@ -15,4 +15,8 @@ export class QueryService {
     return this.http.get(path);
   }
 
+  getCData(path: string): Observable<any>{
+    return this.http.get(path);
+  }
+
 }

@@ -4,6 +4,7 @@
     color: #303233;
     text-decoration: none;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);  
+    background-color: white;
 }
 .btn:hover{
     color:white;
@@ -11,5 +12,13 @@
 }
 hr{
     border-top:solid 2px #fd7e14;
-    width: 30px;
+    width: 50px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+h2{
+    margin-top: 80px;
+}
+a:not([href]):not([tabindex]):hover{
+    color:white;  
 }
