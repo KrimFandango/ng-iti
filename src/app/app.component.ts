@@ -19,4 +19,5 @@ export class AppComponent {
   goRegister():void{
     this.router.navigate(['/signUp'],{queryParams:{name:'marina',age:24}});
   }
+
 }
