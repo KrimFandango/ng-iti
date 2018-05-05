@@ -1,8 +1,15 @@
+// =============== angular modules ===================
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
+// =================== bootstrap ======================
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+// ================= app components ====================
+import { AppComponent } from './app.component';
+// ================== services =========================
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +17,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
