@@ -7,10 +7,13 @@ import { Router,ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  navbarCollapsed: boolean;
   constructor(
     private router:Router,
     private currentRoute : ActivatedRoute
-  ){}
+  ){
+    this.navbarCollapsed = true;
+  }
 
   goLogin():void{
     this.router.navigate(['/login'],{queryParams:{name:'marina',age:24}});
