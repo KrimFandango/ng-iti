@@ -1,0 +1,16 @@
+@import'~scss/variables';
+nav{
+    background-color: $primary-color;
+    a{
+        color:$white;
+
+    }
+} 
+li:hover{
+    
+    border-bottom: 1px solid red;
+    a:hover {
+        color:red;
+        }
+    
+}
