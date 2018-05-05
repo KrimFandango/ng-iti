@@ -2,8 +2,8 @@
 <ngb-tabset type="pills">
   <ngb-tab title="Details" class="mt-5">
     <ng-template ngbTabContent>
-      <div *ngFor="let item of jsonData" class="mt-3 border p-5">
-         <img src={{item.url}} class="mt-5" > <br>
+      <div *ngFor="let item of jsonData" class="mt-3 border p-5 d-flex flex-row">
+         <img src={{item.url}} class="mr-5" > <br>
          <p class="pt-4">{{item.details}}</p>
       </div>
     </ng-template>
@@ -11,16 +11,16 @@
   <ngb-tab>
     <ng-template ngbTabTitle class="btn"><b>Mission</b></ng-template>
     <ng-template ngbTabContent>
-      <div *ngFor="let item of jsonData" class="mt-3 border p-5">
-        <img src={{item.url}} class="mt-5"> <br>
+      <div *ngFor="let item of jsonData" class="mt-3 border p-5 d-flex flex-row">
+        <img src={{item.url}} class="mr-5"> <br>
          <p class="pt-4">{{item.vission}}</p>
       </div>
     </ng-template>
   </ngb-tab>
   <ngb-tab title="Vision">
     <ng-template ngbTabContent>
-      <div *ngFor="let item of jsonData" class="mt-3 border p-5">
-        <img src={{item.url}} class="mt-5"> <br>
+      <div *ngFor="let item of jsonData" class="mt-3 border p-5 d-flex flex-row">
+        <img src={{item.url}} class="mr-5"> <br>
          <p class="pt-4">{{item.mission}}</p>
       </div>
     </ng-template>

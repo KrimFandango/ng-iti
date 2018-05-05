@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
 .btn{
     font-size: 14px;
     color: #303233;
@@ -21,4 +23,18 @@ h2{
 }
 a:not([href]):not([tabindex]):hover{
     color:white;  
+}
+
+.nav-link{
+    color: #fd7e14;
+}
+
+.active{
+    background-color: lightgray;
+    color: black;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #fd7e14;
+    color: white;
 }
