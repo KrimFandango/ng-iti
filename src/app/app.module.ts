@@ -6,11 +6,13 @@ import { ServiceDataService } from './service-data.service';
 
 
 import { AppComponent } from './app.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
