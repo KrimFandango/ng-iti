@@ -1,0 +1,43 @@
+.register{
+
+  background-image: url('assets/images/bg_2.jpg');
+  background-size: cover;
+  .text{
+    h2{
+      font-family:serif;
+      font-size:40px;
+    }
+  
+  }
+  .form-row{
+    label,input[type="submit"]{
+      font-family:arial;
+      font-size:20px;
+    }
+    span{
+      font-size:20px;
+    }
+    ::placeholder {
+      color:#a5a5a5fc;
+    }
+
+    input{
+      padding:10px;
+      font-size:20px;
+      font-family: arial;
+    }
+    input[type='checkbox']{
+      width:25px;
+      height:23px;
+
+    }
+    .form-control {
+      color:black;
+    }
+
+
+  }
+
+
+
+}
