@@ -8,11 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule, Routes } from '@angular/router';
 
 //services
 import {GetDataService} from './get-data.service';
 
-
+const routes: Routes=[
+  // {path:"",component:HeaderComponent},
+  // {path:"contact",component:FooterComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,9 @@ import {GetDataService} from './get-data.service';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
+
   ],
   providers: [GetDataService],
   bootstrap: [AppComponent]
