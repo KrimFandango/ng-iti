@@ -1,6 +1,29 @@
+.contact{
+	background-color:#f0f4f7;
+	margin-top: 80px;
+}
 h2{
 	text-align: center;
 }
 h3{
-	text-align: center;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+.row{
+	width: 100%;
+}
+.Message{
+	width: 100%;
+	padding-bottom: 80px;
+}
+.btn{
+	background-color: #fd7e14;
+	color: white;
+}
+i{
+	color: inherit;
+	margin-right: 10px;
+}
+i:hover{
+	color: #fd7e14;
 }
