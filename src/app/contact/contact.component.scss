@@ -1,0 +1,38 @@
+$mainColor : #d1c286;
+
+html{
+    font-size: 16px;
+}
+.main-color{
+    color: $mainColor;
+}
+.main-back{
+    background-color: $mainColor;
+}
+.form-control{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.form-control:active, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: $mainColor;
+}
+i{
+    font-size: 25px;
+}
+.hfont{
+    font-size: 2rem;
+}
+@media screen and (max-width: 570px) {
+    div{
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 992px) {
+        .contact {
+            text-align: center;
+        }
+        h3.hfont{
+        font-size: 1.2rem;
+        }
+    }
