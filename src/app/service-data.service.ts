@@ -10,7 +10,7 @@ export class ServiceDataService {
 
   constructor(
     private http :HttpClient
-  
+
   ) { }
 
   httpgetData(): Observable <any>{
