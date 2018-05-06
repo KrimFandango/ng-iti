@@ -10,8 +10,4 @@ export class GetDataService {
     return this.http.get(path);
   }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> de532c3ada4236562bffce4a3036143951ae4946
