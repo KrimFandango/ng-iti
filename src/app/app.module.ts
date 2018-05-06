@@ -25,10 +25,10 @@ import {GetDataService} from './get-data.service';
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
+    HttpClientModule
   ],
   providers: [
     FormsModule,
-    HttpClientModule,
     GetDataService
   ],
   bootstrap: [AppComponent]
