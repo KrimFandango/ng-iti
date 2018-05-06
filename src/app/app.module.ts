@@ -1,20 +1,30 @@
+//Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-
+//Components
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+
+//services
+import {GetDataService} from "./get-data.service";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    FormsModule,
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GetDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

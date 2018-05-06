@@ -1,0 +1,46 @@
+@import '../../fonts';
+$primary:#E81F25;
+$secondary:#251625;
+$gray:#F1F1F2;
+.login{
+    font-family: Archer;
+    padding: 50px 0;
+    .error-msg{
+        color: $primary;
+    }
+    .login-body{
+        padding: 50px 80px;
+        background-color: $gray;
+        border-top: 2px solid #898189;
+        .login-title{
+            letter-spacing: 5px;
+        }
+        form{
+            font-family: Raleway;
+            font-weight: bold;
+            label{
+                font-size: 18px;               
+            }
+            input{
+                margin-bottom: 10px;
+                border:none;
+                padding:10px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            a{
+                color: $primary;
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+            button{
+                background-color: $primary;
+                padding: 8px 40px;
+                border:none;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}
+
