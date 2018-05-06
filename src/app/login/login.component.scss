@@ -1,23 +1,23 @@
+// imports files
 @import '../../fonts';
-$primary:#E81F25;
-$secondary:#251625;
-$gray:#F1F1F2;
+@import '../../scss/variables';
+
+// styling
 .login{
     font-family: Archer;
     padding: 50px 0;
     .error-msg{
-        color: $primary;
+        color: $secondary-color;
+        font-size: 12px;
     }
     .login-body{
         padding: 50px 80px;
-        background-color: $gray;
-        border-top: 2px solid #898189;
+        background-color: $form-bg;
         .login-title{
             letter-spacing: 5px;
         }
         form{
-            font-family: Raleway;
-            font-weight: bold;
+            font-family: RalewayBold;
             label{
                 font-size: 18px;               
             }
@@ -30,14 +30,17 @@ $gray:#F1F1F2;
                 }
             }
             a{
-                color: $primary;
+                color: $secondary-color;
                 text-decoration: underline;
                 margin-bottom: 30px;
             }
             button{
-                background-color: $primary;
-                padding: 8px 40px;
-                border:none;
+                font-family: RalewayReg; 
+                background-color: $secondary-color;
+                border-color: $secondary-color;  
+                padding: 8px 40px;     
+            }
+            button:hover {
                 box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
             }
         }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+// import { QueryService } from '../query.service';
 
 @Component({
   selector: 'app-registration',

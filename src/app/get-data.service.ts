@@ -6,8 +6,10 @@ import { Observable } from 'rxjs/Observable';
 export class GetDataService {
 
   constructor(private http:HttpClient) { }
+  
   getDataFunc(path:string):Observable<any>{
     return this.http.get(path);
   }
 
 }
+
