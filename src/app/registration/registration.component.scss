@@ -1,6 +1,26 @@
-.register{
-    background-color: #EFEFEF;
-    span{
-        color: red;
+@import '../../fonts';
+.container{
+    font-family: Archer;
+    color: #312131;
+    .register{
+        background-color: #EFEFEF;
+        h3{
+            letter-spacing: 12px;
+        }
+        label{
+            font-family: RalewayBold;
+        }
+        button{
+            font-family: RalewayReg; 
+            background-color: #EA2026;
+            border-color: #EA2026;       
+        }
+        button:hover {
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+        }
+        span{
+            color: red;
+            font-size: 0.8em;
+        }
     }
 }
