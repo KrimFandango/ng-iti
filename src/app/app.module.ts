@@ -12,11 +12,13 @@ import { LoginComponent } from './login/login.component';
 
 // ================== services =========================
 import { DataService } from './data.service';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
