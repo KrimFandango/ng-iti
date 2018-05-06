@@ -1,0 +1,48 @@
+<!-- login component -->
+<section class="login">
+    <div class="container">
+        <h2 class="pb-2">Please fill in your login details below:</h2>
+        <div class="login-body">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <h3 class="login-title">Log in</h3>
+                    <img width="300" height="300" src="../../assets/images/LogoRedWord-0١.png" alt="">
+                </div>
+                <div class="col-md-6">
+
+                    <!-- login form -->
+                    <form name="login" #login="ngForm" (ngSubmit)="loginData(login)" novalidate>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username/Email: *</label>
+                            <input type="text" class="form-control" aria-describedby="emailHelp" name="user_name" [(ngModel)]="user_name" #user="ngModel"
+                                required />
+
+                            <!-- validation message -->
+                            <div *ngIf="user.invalid && (user.dirty || user.touched)">
+                                <div class="error-msg" *ngIf="user.errors.required">
+                                    This field is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Password: *</label>
+                            <input type="password" class="form-control" aria-describedby="emailHelp" name="password" [(ngModel)]="password" #pass="ngModel"
+                                required />
+                                
+                            <!-- validation message -->
+                            <div *ngIf="pass.invalid && (pass.dirty || pass.touched)">
+                                <div class="error-msg" *ngIf="pass.errors.required">
+                                    This field is required
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="d-block text-center">Forgot your password ?</a>
+                        <div class="text-center">
+                            <button class="btn btn-primary">Log in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
