@@ -1,9 +1,10 @@
 @import '../../fonts';
+@import '../../scss/variables';
 .container{
     font-family: Archer;
-    color: #312131;
+    color: $primary-color;
     .register{
-        background-color: #EFEFEF;
+        background-color: $form-bg;
         h3{
             letter-spacing: 12px;
         }
@@ -12,14 +13,14 @@
         }
         button{
             font-family: RalewayReg; 
-            background-color: #EA2026;
-            border-color: #EA2026;       
+            background-color: $secondary-color;
+            border-color: $secondary-color;       
         }
         button:hover {
             box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
         }
         span{
-            color: red;
+            color: $secondary-color;
             font-size: 0.8em;
         }
     }

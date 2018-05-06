@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "../bower_components/bootstrap/scss/bootstrap.scss",
+        "scss/styles.scss",
         "styles.scss"
       ],
       "scripts": [],
