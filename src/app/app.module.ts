@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceDataService } from './service-data.service';
-
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -19,7 +19,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ServiceDataService],
   bootstrap: [AppComponent]

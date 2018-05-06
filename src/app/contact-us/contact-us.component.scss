@@ -1,0 +1,45 @@
+#ContactUs
+{
+    height: 100vh;
+    background: 
+    {
+        image: url("../../../src/assets/Img/bg_4.jpg");
+        size: cover;
+        position: center;
+    }
+    h2{
+        font-family: roboto;
+    }
+    p{
+        font:
+        {
+            size: 20px;
+            weight: 500;
+            family:sans-serif;
+        }
+            
+        width: 432px;
+    }
+    form{
+        width: 377px;
+    }
+    label
+    {       
+        font:
+        {
+            size: 20px;
+            weight: 500;
+            family:sans-serif;
+        }
+    }
+    .form-control
+    {
+        border-radius: 0;
+    }
+
+    .btn
+    {
+        background-color: #0094da;
+        width: 120px;
+    }
+}
