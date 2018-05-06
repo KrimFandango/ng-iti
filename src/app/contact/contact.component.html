@@ -1,0 +1,51 @@
+<!-- <p>
+  contact works!
+</p> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <!-- <form novalidate #myForm='ngForm' (ngSubmit)="mySubmit(myForm)">
+            <div class="form-group">
+                <label for="name">Your First Name</label>
+                <input type="text" #myName='ngModel'  class="form-control" [(ngModel)]='user.name' name='name' id="name" required minlength="4" >
+
+                <label for="lastName">Your Last Name</label>
+                <input type="text" #myLastName='ngModel'  class="form-control" [(ngModel)]='user.lastName' name='lastName' id="lastName" required minlength="4" >
+
+
+                <div *ngIf="myName.errors?.required && myName.touched " class="alert alert.danger">req
+
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+          </form> -->
+
+          <input id="name" name="name" class="form-control"
+       required minlength="4" appForbiddenName="bob"
+       [(ngModel)]="hero.name" #name="ngModel" >
+
+<div *ngIf="name.invalid && (name.dirty || name.touched)"
+     class="alert alert-danger">
+
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bob.
+  </div>
+
+</div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<h1>{{name}}</h1>
+
