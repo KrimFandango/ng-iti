@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
-// import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 // service
 import {GetDataService} from '../get-data.service';
 
@@ -12,11 +12,13 @@ import {GetDataService} from '../get-data.service';
 })
 export class LoginComponent implements OnInit {
   checkData: Array<any>;
+  flag:boolean;
   constructor(
-    private query: GetDataService
-    // private goHome:Router
+    private query: GetDataService,
+    private goHome:Router
   ) {
     this.checkData = [];
+    this.flag = false;
     this.getLoginData();
    }
 
@@ -36,20 +38,24 @@ export class LoginComponent implements OnInit {
   }
 
   // for redirect user after check of his existance
-  // goHomeRedirct():void{
-  //   this.goHome.navigate(["/login/"]);
-  // }
+  goHomeRedirct():void{
+    this.goHome.navigate(["//"]);
+  }
+
   loginData(loginData: NgForm): void {
     if (!loginData.valid) {
       console.log(`You have an error`);
     } else {
       for (const name of this.checkData) {
         if (loginData.value.user_name === name.user_name && loginData.value.password === name.password) {
-          console.log(`yeeeeees`);
-          // this.goHomeRedirct();
+          console.log(`Member`);
+          this.goHomeRedirct();
+          this.flag = true;
         }
       }
-
+      if(!this.flag){
+        alert(`Invalid user name or password`);
+      }
     }
   }
 

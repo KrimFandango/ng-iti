@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
   //  {path:"Contact us",component:},
-  //  {path:"Log in",component:}
+  {path:"Login",component:LoginComponent}
 ];
 @NgModule({
   declarations: [
