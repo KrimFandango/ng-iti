@@ -9,17 +9,15 @@ import { NgModel,NgForm } from '@angular/forms';
 export class RegisterComponent implements OnInit {
 
   constructor() { }
+  //register function
   register(data:NgForm):void{
-    if(!data.valid){
+    if(!data.valid){  //check if the data isn't valid
       console.log("error");
-
     }
-    else{
+    else{ 
      console.log(data);
      
     }
-   
-
   }
 
 
