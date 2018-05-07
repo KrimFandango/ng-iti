@@ -10,15 +10,15 @@ import { GetDataService } from './../get-data.service';
 })
 export class AboutusComponent implements OnInit {
   es: string;
-  team:object;
-  constructor(private Data:GetDataService) { 
+  team: object;
+  constructor(private Data: GetDataService) {
     this.team = {};
     this.teamfunction();
-    this.es="ANa hena";
+    this.es = 'ANa hena';
   }
 
-  teamfunction(){
-    let path: string = 'assets/Data/aboutus_data.json';
+  teamfunction() {
+    const path = 'assets/Data/aboutus_data.json';
     this.Data.getDataFunc(path).subscribe(
       res => this.team = res,
       err => console.log(err)
@@ -27,6 +27,6 @@ export class AboutusComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
 
 }
