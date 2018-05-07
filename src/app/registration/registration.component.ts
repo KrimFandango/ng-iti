@@ -24,7 +24,7 @@ export class RegistrationComponent implements OnInit {
   addNewUser(form: NgForm): void {
     console.log(this.dataObj);
     // console.log(form);
-    (this.dataObj.password !== this.dataObj.passwordRetyped) ? this.invalid_match = true : this.invalid_match = false;
+    this.invalid_match = (this.dataObj.password !== this.dataObj.passwordRetyped) ? true : false;
     if (form.submitted && form.valid && !this.invalid_match) {
       this.router.navigate(['']);
     }
