@@ -4,48 +4,55 @@
         "Email":"samirasaad577@gmail.com",
         "Position":"Frontend Web Developer",
         "Phone":"0128 702 3737",
-        "Description":"as you cannot compete without a website , i am a junior front end developer , seeking to a position in an environment that allows me to add the magic to the science and enhance my personal and techniqal skills"
+        "Description":"as you cannot compete without a website , i am a junior front end developer , seeking to a position in an environment that allows me to add the magic to the science and enhance my personal and techniqal skills",
+        "img":"samira"
     },
     {
         "name":"Aya Atiya",
         "Email":"ayaatiya22@gmail.com",
         "Position":"UI Developer",
         "Phone":"0122 919 5512",
-        "Description":"To work as a User-Interface developer in a challenging environment seeking to use acquired knowledge of programing, design and the passion towards being a User-Interface developer to implement different web templates, helping to achieve company’s goals. I will try to innovate and improve process wherever I go as a result of working with di erent teams"
+        "Description":"To work as a User-Interface developer in a challenging environment seeking to use acquired knowledge of programing, design and the passion towards being a User-Interface developer to implement different web templates, helping to achieve company’s goals. I will try to innovate and improve process wherever I go as a result of working with di erent teams",
+        "img":"aya"
     },
     {
         "name":"Kareem Kamal",
         "Email":"kareemkamal91@gmail.com",
         "Position":"Frontend Web Developer",
         "Phone":"0127 886 1411",
-        "Description":"Freelancer Web Developer, more details on kkmet.com"
+        "Description":"Freelancer Web Developer, more details on kkmet.com",
+        "img":"kareem"
     },
     {
         "name":"Ekbal Zayan",
         "Email":"Zayan.ekbal@gmail.com",
         "Position":"Front-End developer",
         "Phone":"0114 544 7699",
-        "Description":"Working gives me a lot of skills and experience that I believe make me best suited for the job position that is being offered with a position of Front End Developer and with team and valuable clients"
+        "Description":"Working gives me a lot of skills and experience that I believe make me best suited for the job position that is being offered with a position of Front End Developer and with team and valuable clients",
+        "img":"ekbal"
     },
     {
         "name":"Yasmen Elsayes",
         "Email":"yasmen.elsayes@gmail.com",
         "Position":"UI Developer",
         "Phone":"0106 556 4420",
-        "Description":"With strong design skills, acute attention to detail, passion for front-end development, and 4+ years of experience in Graphic design, I wish to work as a web designer, as well as a UI developer where I can create sound digital environments and elevate to the next level."
+        "Description":"With strong design skills, acute attention to detail, passion for front-end development, and 4+ years of experience in Graphic design, I wish to work as a web designer, as well as a UI developer where I can create sound digital environments and elevate to the next level.",
+        "img":"yasmeen"
     },
     {
         "name":"Huda Salah",
         "Email":"hudasalah29@gmail.com",
         "Position":"Frontend Web Developer",
         "Phone":"0115 951 7378",
-        "Description":"I’m a highly creative and a proven team player in Front End Development and I have 1-year experience building, developing and managing websites and applications."
+        "Description":"I’m a highly creative and a proven team player in Front End Development and I have 1-year experience building, developing and managing websites and applications.",
+        "img":"huda"
     },
     {
         "name":"Remon Sohdy",
         "Email":"sohdy.hanna@gmail.com",
         "Position":"UI/UX Designer",
         "Phone":"0155 030 8304",
-        "Description":"Experienced User Interface Designer with focus on optimal efficiency, simplicity, and functionality"
+        "Description":"Experienced User Interface Designer with focus on optimal efficiency, simplicity, and functionality",
+        "img":"remon"
     }
 ]
