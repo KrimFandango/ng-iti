@@ -1,3 +1,22 @@
-<p>
-  login works!
-</p>
+<div class="container m-auto  text-center">
+      <div class="row">   
+         <div class="col-sm-6 offset-sm-3">
+            <div class="bg">
+                <h2 class="mt-1 text-center">Login Form</h2>
+                <hr>
+            <form name="loginForm" #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)" novalidate>
+              <input type="text" class="form-control mb-3" placeholder="Email Address" ngModel name="email" #email="ngModel" required/>
+              <div class="alert alert-danger mb-2" role="alert" *ngIf="email.touched && !email.valid">
+                Email is required
+              </div>  
+              <input type="password" class="form-control mb-3"  placeholder="password here" ngModel name="password"  #password="ngModel"  required>
+              <div class="alert alert-danger mb-2" role="alert" *ngIf="password.touched && !password.valid">
+                Password is required
+              </div>
+              <button  [disabled]="!loginForm.valid" type="submit"class="btn">Login</button>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+

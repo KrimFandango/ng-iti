@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+import { NgForm, NgModel } from '@angular/forms';
 import { LoginComponent } from './login.component';
 
 describe('LoginComponent', () => {
@@ -23,3 +25,7 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+
+
