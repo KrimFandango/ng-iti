@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{ GetDataService } from '../get-data.service';
+import { GetDataService } from '../get-data.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +7,20 @@ import{ GetDataService } from '../get-data.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  data: Array<any>;
+  constructor(private seviceObj: GetDataService) {
+    this.data = [];
+    this.get_pic();
+  }
 
-  constructor() { }
-
+  get_pic(): void {
+    const path = '../assets/Data/pics.json';
+    this.seviceObj.getDataFunc(path).subscribe(
+      res => { console.log(res); this.data = res; },
+      err => { console.log(err); },
+      () => { }
+    );
+  }
   ngOnInit() {
   }
 

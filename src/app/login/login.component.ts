@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
 import { Router } from '@angular/router';
 // service
-import {GetDataService} from '../get-data.service';
+import { GetDataService } from '../get-data.service';
 
 
 @Component({
@@ -12,15 +12,15 @@ import {GetDataService} from '../get-data.service';
 })
 export class LoginComponent implements OnInit {
   checkData: Array<any>;
-  flag:boolean;
+  flag: boolean;
   constructor(
     private query: GetDataService,
-    private goHome:Router
+    private goHome: Router
   ) {
     this.checkData = [];
     this.flag = false;
     this.getLoginData();
-   }
+  }
 
   ngOnInit() {
   }
@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
   }
 
   // for redirect user after check of his existance
-  goHomeRedirct():void{
-    this.goHome.navigate(["//"]);
+  goHomeRedirct(): void {
+    this.goHome.navigate(['//']);
   }
 
   loginData(loginData: NgForm): void {
@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
           this.flag = true;
         }
       }
-      if(!this.flag){
+      if (!this.flag) {
         alert(`Invalid user name or password`);
       }
     }

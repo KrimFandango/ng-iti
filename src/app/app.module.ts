@@ -6,23 +6,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
-// Components
-import { AppComponent } from './app.component';
+// components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 
-// Services
+// services
 import { GetDataService } from './get-data.service';
 
+
 const routes: Routes = [
-  { path: '', component: HeaderComponent },
+  // { path: '', component: HeaderComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
-  //  {path:"Contact us",component:},
-  {path:"Login",component:LoginComponent}
+  //  {path:'Contact us',component:},
+  { path: 'Login', component: LoginComponent }
 ];
 @NgModule({
   declarations: [
