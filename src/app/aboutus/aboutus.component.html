@@ -1,50 +1,60 @@
-<div class="container">
+<div class=" aboutus-style">
 <section class="mb-5">
     <div class="row ">
-
-      <div class="col-sm-6 p-0">
-        <h1 class="mb-5">About Us</h1>
-        <ngb-accordion [closeOthers]="true" activeIds="static-1">
-          <ngb-panel id="static-1" title="Advertising">
-            <ng-template ngbPanelContent>
-       Full-Service agency with decades of experience creating successful
-       campaigns for hundreds of local, national and international companies.
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel id="static-2">
-            <ng-template ngbPanelTitle>
-              <span>Marketing</span>
-              </ng-template>
-              <ng-template ngbPanelContent>
-             Full-Service agency with decades of experience creating successful campaigns for hundreds of local, national and international
-            companies.
-              </ng-template>
-            </ngb-panel>
-          <ngb-panel id="static-3">
-            <ng-template ngbPanelTitle>
-              <span>Design</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-                 Full-Service agency with decades of experience creating successful campaigns for hundreds of local, national and international
-                companies.
-            </ng-template>
-          </ngb-panel>
-          </ngb-accordion>
+      <div class="col-sm-6">
+          <div class="col-sm-6 p-0 acc-wrapper ">
+            <h1 class="my-5 aboutus-title">About Us</h1>
+            <ngb-accordion [closeOthers]="true" activeIds="static-1">
+              <ngb-panel id="static-1" title="">
+                <ng-template ngbPanelTitle>
+                  <span class="acc-title">Advertising</span>
+                </ng-template>
+                <ng-template ngbPanelContent class="content-style">
+                  <p class="content-style "> Full-Service agency with decades of experience creating successful campaigns for hundreds of local, national and international
+                    companies.
+                  </p>
+                </ng-template>
+              </ngb-panel>
+              <ngb-panel id="static-2">
+                <ng-template ngbPanelTitle>
+                  <span class="acc-title">Marketing</span>
+                </ng-template>
+                <ng-template ngbPanelContent >
+                  <p class="content-style"> Full-Service agency with decades of experience creating successful campaigns for hundreds of local, national and international
+                    companies.
+                  </p>
+                </ng-template>
+              </ngb-panel>
+              <ngb-panel id="static-3">
+                <ng-template ngbPanelTitle>
+                  <span class="acc-title">Design</span>
+                </ng-template>
+                <ng-template ngbPanelContent >
+                  <p class="content-style" > Full-Service agency with decades of experience creating successful campaigns for hundreds of local, national and international
+                    companies.</p>
+                  </ng-template>
+                </ngb-panel>
+              </ngb-accordion>
+            </div>
         </div>
-        <div class="col-sm-6 p-0">
-          <img src="../../assets/images/img_6.jpg" class="w-100" alt="">
+          <div class="col-sm-6 p-0">
+            <img src="../../assets/images/img_6.jpg" class="w-100" alt="">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     
     <Section class="mb-5">
-      <h2 class="text-center section_title mb-5">Our Team</h2>
-      <div class="card-deck">
-        <div class="card pt-2 pb-5 border-0 shadow">
-          <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{team.name1}}</h5>
-            <p class="card-text text-center">{{team.job1}}</p>
+      <div class="container">
+
+        
+        
+        <h2 class="text-center section_title mb-5 ">Our Team</h2>
+        <div class="card-deck">
+          <div class="card pt-2 pb-5 border-0 shadow">
+            <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{team.name1}}</h5>
+              <p class="card-text text-center">{{team.job1}}</p>
             </div>
           </div>
           <div class="card pt-2 pb-5 border-0 shadow">
@@ -52,7 +62,7 @@
             <div class="card-body">
               <h5 class="card-title text-center">{{team.name2}} </h5>
               <p class="card-text text-center">{{team.job2}}</p>
-           
+              
             </div>
           </div>
           <div class="card pt-2 pb-5 border-0 shadow">
@@ -61,37 +71,42 @@
               <h5 class="card-title text-center">{{team.name3}}</h5>
               <p class="card-text text-center">{{team.job3}}</p>
               
-              </div>
             </div>
-          </div>
-        </Section>
-        
-
-    <Section class="mb-5">
-      <div class="card-deck">
-        <div class="card pt-2 pb-5 border-0 shadow">
-          <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user3.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{team.name4}}</h5>
-            <p class="card-text text-center">{{team.job4}}</p>
-           
-          </div>
-        </div>
-        <div class="card pt-2 pb-5 border-0 shadow">
-          <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{team.name5}}</h5>
-            <p class="card-text text-center">{{team.job5}}</p>
-          
-          </div>
-        </div>
-        <div class="card pt-2 pb-5 border-0 shadow">
-          <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{team.name6}}</h5>
-            <p class="card-text text-center">{{team.job6}}</p>
-           
           </div>
         </div>
       </div>
-    </Section>
+      </Section>
+      
+      
+      <Section class="mb-5">
+        <div class="container">
+          
+          <div class="card-deck">
+            <div class="card pt-2 pb-5 border-0 shadow">
+              <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{team.name4}}</h5>
+                <p class="card-text text-center">{{team.job4}}</p>
+                
+              </div>
+            </div>
+            <div class="card pt-2 pb-5 border-0 shadow">
+              <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{team.name5}}</h5>
+                <p class="card-text text-center">{{team.job5}}</p>
+                
+              </div>
+            </div>
+            <div class="card pt-2 pb-5 border-0 shadow">
+              <img class="card-img-top rounded-circle user_img mx-auto" src="../../assets/images/user1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{team.name6}}</h5>
+                <p class="card-text text-center">{{team.job6}}</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        </Section>
+        
