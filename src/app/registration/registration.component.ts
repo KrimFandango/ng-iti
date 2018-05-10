@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-// import { QueryService } from '../query.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-registration',
@@ -16,18 +16,17 @@ export class RegistrationComponent implements OnInit {
     password: '',
     passwordRetyped: ''
   };
-  constructor() {
+  constructor(private router: Router) {
     this.invalid_match = false;
   }
   ngOnInit() {
   }
   addNewUser(form: NgForm): void {
     console.log(this.dataObj);
-    console.log(form);
-    if (this.dataObj.password !== this.dataObj.passwordRetyped) {
-      this.invalid_match = true; // true is entered password and retype password is not matched
-    } else {
-      this.invalid_match = false;
+    // console.log(form);
+    this.invalid_match = (this.dataObj.password !== this.dataObj.passwordRetyped) ? true : false;
+    if (form.submitted && form.valid && !this.invalid_match) {
+      this.router.navigate(['']);
     }
   }
   resetFlag(): void {
