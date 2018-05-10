@@ -19,7 +19,7 @@ import {GetDataService} from './get-data.service';
 
 
 const routes: Routes = [
-  // { path: '', component: HeaderComponent },
+  // { path: '', component: HomeComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
   //  {path:"Contact us",component:},
