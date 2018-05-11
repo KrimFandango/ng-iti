@@ -46,14 +46,14 @@ contact( data : NgForm ):void{
   if(!data.valid)
   {
     console.log("error");
-    alert("errror")
+    alert("Please enter valid values")
   } 
   else{
     console.log(data);
     console.log(this.dataForm);
   }
 }
- 
+
   ngOnInit() {
   }
 

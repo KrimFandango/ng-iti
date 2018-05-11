@@ -26,15 +26,15 @@ export class LoginComponent implements OnInit {
   loginFunc(data: NgForm): void {
     // ========== for loop on userData array to check ==========
     console.log(data);
-    // for (var user of this.usersData) {
-    //   // console.log(user.password);
-    //   if (data.value.email == user.email && data.value.password == user.password) {
-    //     console.log("Member!");
-    //   }
-    //   else {
-    //     console.log("not a member");
-    //   }
-    // }
+    for (var user of this.usersData) {
+      // console.log(user.password);
+      if (data.value.email == user.email && data.value.password == user.password) {
+        console.log("Member!");
+      }
+      else {
+        console.log("not a member");
+      }
+    }
   }
 
 
