@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 // services
 import { GetDataService } from './get-data.service';
@@ -32,7 +33,8 @@ const routes: Routes = [
     FooterComponent,
     LoginComponent,
     AboutusComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
