@@ -1,26 +1,13 @@
-[
-    {
-        "name": "Walaa Muhammed",
-        "job": "Front End Developer"
-    },
-    {
-        "name": "Somaya El Sayed",
-        "job": "UI/UX Designer"
-    },
-    {
-        "name": "Menna Farghaly",
-        "job": "UI/UX Designer"
-    },
-    {
-        "name": "Dina Khaled",
-        "job": "Front End Developer"
-    },
-    {
-        "name": "Alaa Moustafa",
-        "job": "Front End Developer"
-    },
-    {
-        "name": "Esraa Abdou",
-        "job": "Front End Developer"
+{       "name1": "Walaa Muhammed",
+        "job1": "Front End Developer",
+        "name2": "Somaya El Sayed",
+        "job2": "UI/UX Designer",
+        "name3": "Menna Farghaly",
+        "job3": "UI/UX Designer",
+        "name4": "Dina Khaled",
+        "job4": "Front End Developer",
+        "name5": "Alaa Moustafa",
+        "job5": "Front End Developer",
+        "name6": "Esraa Abdou",
+        "job6": "Front End Developer"
     }
-]
