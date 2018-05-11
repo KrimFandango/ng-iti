@@ -1,51 +1,58 @@
-<!-- <p>
-  contact works!
-</p> -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-        <!-- <form novalidate #myForm='ngForm' (ngSubmit)="mySubmit(myForm)">
-            <div class="form-group">
-                <label for="name">Your First Name</label>
-                <input type="text" #myName='ngModel'  class="form-control" [(ngModel)]='user.name' name='name' id="name" required minlength="4" >
-
-                <label for="lastName">Your Last Name</label>
-                <input type="text" #myLastName='ngModel'  class="form-control" [(ngModel)]='user.lastName' name='lastName' id="lastName" required minlength="4" >
 
 
-                <div *ngIf="myName.errors?.required && myName.touched " class="alert alert.danger">req
-
-                </div>
-              </div>
-            <button type="submit" class="btn btn-primary">SUBMIT</button>
-          </form> -->
-
-          <input id="name" name="name" class="form-control"
-       required minlength="4" appForbiddenName="bob"
-       [(ngModel)]="hero.name" #name="ngModel" >
-
-<div *ngIf="name.invalid && (name.dirty || name.touched)"
-     class="alert alert-danger">
-
-  <div *ngIf="name.errors.required">
-    Name is required.
-  </div>
-  <div *ngIf="name.errors.minlength">
-    Name must be at least 4 characters long.
-  </div>
-  <div *ngIf="name.errors.forbiddenName">
-    Name cannot be Bob.
-  </div>
-
-</div>
-
-
-
-
+<section class="contactUs">
+    <div class="container mb-5">
+        <div class="row  contact">
+            <div class="col-12 d-flex justify-content-center ">
+                <h3 class="pb-3 text-center">Contact Us</h3>
+            </div>
+            <div class="col-12">
+                <form class="row d-flex justify-content-center" name="contactForm" #contactForm="ngForm" (ngSubmit)="contact(contactForm)" novalidate>
+                    <div class="col-md-8 col-12 pb-3 ">
+                        <label for="fname">Your firstname</label>
+                        <input class="form-control p-3" type="text"  name="fname" id="fname" [(ngModel)]="dataForm.fname" required>
+                    </div>
+                    <div class="col-md-8 col-12 pb-3 ">
+                        <label for="lname">Your lastname</label>
+                        <input class="form-control p-3" type="text" name="lname" id="lname" [(ngModel)]="dataForm.lname" required>
+                    </div>
+                    <div class="col-md-8 col-12 pb-3 ">
+                        <label for="email">Enter your email </label>
+                        <input class="form-control p-3" type="text"  name="email" id="email" [(ngModel)]="dataForm.email" required email>
+                    </div>
+                    <div class="col-md-8 col-12 pb-3 ">
+                        <label for="email">Enter your message </label>
+                        <textarea class="form-control p-3"  rows="10"  name="message" id="message" [(ngModel)]="dataForm.message" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary  border-0">Send Message</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
     </div>
-  </div>
-</div>
 
-<h1>{{name}}</h1>
+
+
+
+    <div class="container-fluid contact-info ">
+        <div class="row pt-5 pb-5 ">
+            <div class="col-sm-4 text-center " *ngFor="let x of contactData" >
+                <div class="mb-4">
+                    <img [src]="x.img">
+                </div>
+                <p class="col-12 col-lg-9 text-secondary pb-2 m-auto">
+                    {{x.Info}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
 

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 export class DataService {
 
   constructor(private req: HttpClient) { }
+  
   getData(path: string): Observable<any> {
     return this.req.get(path);
   }

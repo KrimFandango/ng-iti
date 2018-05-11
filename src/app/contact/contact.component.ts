@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+//form
+import { NgForm , NgModel } from '@angular/forms';
+//service
+import{ DataService } from'../data.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,13 +10,50 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  user={
-    name: " ",
-    lastName: "jj"
+  dataForm :object;
+  contactData:Array<object>;
 
+  constructor( 
+    private data : DataService
+  ) {
+    this.contactData=[];
+    this.getContactData();
+    this.dataForm={};
+   }
+
+
+
+
+   getContactData():void{
+    let path : string =' ././assets/companyData.json';
+    this.data.getData(path).subscribe(
+      res => {
+        this.contactData=res;
+        // console.log(res);
+      },
+      err => {
+        console.log(err);
+      },
+    );
+    
   }
-  constructor() { }
 
+  
+  
+
+
+contact( data : NgForm ):void{
+  if(!data.valid)
+  {
+    console.log("error");
+    alert("errror")
+  } 
+  else{
+    console.log(data);
+    console.log(this.dataForm);
+  }
+}
+ 
   ngOnInit() {
   }
 
