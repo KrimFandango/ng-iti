@@ -16,6 +16,7 @@ import { RegistrationComponent } from './registration/registration.component';
 
 // Services
 import { GetDataService } from './get-data.service';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HeaderComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
     FooterComponent,
     LoginComponent,
     AboutusComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
