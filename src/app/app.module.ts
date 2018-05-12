@@ -21,10 +21,10 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+   { path: '', component: HomeComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
-   {path:'Contact us',component:ContactUsComponent},
+    {path:'Contact us',component:ContactUsComponent},
   { path: 'Login', component: LoginComponent }
 ];
 @NgModule({
