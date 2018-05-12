@@ -13,16 +13,18 @@ import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 // services
 import { GetDataService } from './get-data.service';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  // { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
-  //  {path:'Contact us',component:},
+   {path:'Contact us',component:ContactUsComponent},
   { path: 'Login', component: LoginComponent }
 ];
 @NgModule({
@@ -32,7 +34,9 @@ const routes: Routes = [
     FooterComponent,
     LoginComponent,
     AboutusComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
