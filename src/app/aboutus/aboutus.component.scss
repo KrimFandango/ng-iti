@@ -1,0 +1,56 @@
+@import '../../fonts';
+@import '../../scss/variables';
+.aboutus-style{
+
+    font-family: Archer;
+
+    .acc-wrapper{
+        padding-left: 20px;
+    }
+     /deep/ .card {
+  border: none;
+}
+
+/deep/ .card-header {
+  border: none;
+  background: white;
+}
+
+/deep/ .card-block {
+  text-align: left;
+}
+.content-style{
+    font-size: 1.5rem;
+    color:$content-text;
+}
+    .aboutus-title{
+        color:$secondary-color;
+        letter-spacing: 12px;
+        font-size: 3rem;
+    }
+    .section_title{
+         color:$secondary-color;
+        letter-spacing: 12px;
+        font-size: 2rem;
+        
+    }
+    .acc-title{
+        color: $primary-color;
+        font-size: 2rem;
+    }
+    .acc-title:selected{
+        color: $secondary-color;
+    }
+    .user_img{
+        width: 125px;
+        height: 125px;
+    
+    }
+    .shadow{
+        // box-shadow:0 0.2px; 
+        box-shadow: 14px 13px 16px -13px rgba(0,0,0,0.86);
+    }
+    .center-acc{
+        margin: 0 auto;
+    }
+}

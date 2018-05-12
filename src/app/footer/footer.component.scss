@@ -1,0 +1,18 @@
+@import'~scss/variables';
+footer{
+    font-family: RalewayBold;
+    background-color: $primary-color;
+    p{
+        color:$footer-text-color;
+    }
+}
+
+
+
+.footer-btn{
+    background: $footer-text-color;
+    border-style: none; 
+    border-radius: 12px;
+    border: none;
+    padding: 7px;
+}

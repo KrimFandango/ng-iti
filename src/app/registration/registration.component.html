@@ -1,0 +1,75 @@
+<div class="container mt-5 mb-5">
+  <h2>Please fill in your Register details below:</h2>
+  <div class="register p-5">
+      <div class="row">
+          <div class="col-md-6 text-center">
+            <h3 class="text-center">Registration</h3>
+            <img src="../../assets/images/logo.png" alt="logo" class="w-75">
+          </div>
+          <div class="col-md-6">
+            <form name="registerForm" (ngSubmit)="addNewUser(f)" #f="ngForm" novalidate>
+              <div class="mb-3">
+                <label class="d-block">Email:*</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                       [(ngModel)]="dataObj.email" required class="form-control">
+                <div *ngIf="f.controls.email.invalid && f.submitted">
+                  <span *ngIf="f.controls.email.errors.required">
+                    email is required
+                  </span>
+                  <span *ngIf="f.controls.email.errors.pattern">
+                    email format is not valid
+                  </span>
+                </div>                    
+              </div>
+              <div class="mb-3">
+                <label class="d-block">Username:*</label>
+                <input type="text" id="username" name="username" minlength="4"
+                       [(ngModel)]="dataObj.username" required class="form-control">
+                <div *ngIf="f.controls.username.invalid && f.submitted">
+                  <span *ngIf="f.controls.username.errors.required">
+                    username is required
+                  </span>
+                  <span *ngIf="f.controls.username.errors.minlength">
+                    username must be at least 4 characters
+                  </span>
+                </div> 
+              </div>
+              <div class="mb-3">
+                <label class="d-block">Password:*</label>
+                <input type="password" id="password" name="password" [(ngModel)]="dataObj.password" required
+                       minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control">
+                <div *ngIf="f.controls.password.invalid && f.submitted">
+                  <span *ngIf="f.controls.password.errors.required">
+                    password is required
+                  </span>
+                  <span *ngIf="f.controls.password.errors.minlength; else checkPattern">
+                    password should be at least 8 characters
+                  </span>
+                  <ng-template #checkPattern> 
+                    <span *ngIf="f.controls.password.errors.pattern">
+                      password should contain uppercase, lowercase and number
+                    </span>
+                  </ng-template> 
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="d-block">Confirm password:*</label>
+                <input  type="password" id="passwordRetyped" name="passwordRetyped" (input)="resetFlag()"
+                        [(ngModel)]="dataObj.passwordRetyped" required class="form-control">
+                <div *ngIf="f.submitted">
+                  <span *ngIf="f.controls.passwordRetyped.invalid && f.controls.passwordRetyped.errors.required">
+                    retyping password is required
+                  </span>   
+                  <span *ngIf="f.controls.passwordRetyped.valid && invalid_match">
+                    password fields are not matched
+                  </span>
+                </div>
+              </div>
+              <div class="text-center">
+                  <button class="btn btn-secondary pr-5 pl-5">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+  </div>
+</div>

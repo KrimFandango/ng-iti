@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'RalewayReg';
+    src: url('assets/fonts/Raleway-Regular.eot');
+    src: url('assets/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Regular.woff') format('woff'),
+        url('assets/fonts/Raleway-Regular.ttf') format('truetype'),
+        url('assets/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('assets/fonts/Raleway-Bold.eot');
+    src: url('assets/fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Bold.woff') format('woff'),
+        url('assets/fonts/Raleway-Bold.ttf') format('truetype'),
+        url('assets/fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archer';
+    src: url('assets/fonts/Archer-Semibold.eot');
+    src: url('assets/fonts/Archer-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Archer-Semibold.woff2') format('woff2'),
+        url('assets/fonts/Archer-Semibold.woff') format('woff'),
+        url('assets/fonts/Archer-Semibold.ttf') format('truetype'),
+        url('assets/fonts/Archer-Semibold.svg#Archer-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
