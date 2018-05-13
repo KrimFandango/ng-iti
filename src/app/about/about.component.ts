@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceDataService } from '../service-data.service';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  people: object;
+  constructor(
+    private data : ServiceDataService
+  ) { }
 
   ngOnInit() {
+    this.data.httpgetData().subscribe(data => {
+      this.people = data;
+      console.log(this.people)
+    })
   }
 
 }
