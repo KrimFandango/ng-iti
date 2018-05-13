@@ -1,0 +1,27 @@
+
+<div class="container">
+ <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand "   routerLink="/home"><img class="w-25 h-25" src="../../assets/images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active"  routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link text-dark"  routerLink="/about">About Us</a>
+        <a class="nav-item nav-link text-dark"  routerLink="/contact">Contact Us</a>
+        <!-- <a class="nav-item nav-link text-dark"  routerLink="/log">Login</a> -->
+        <!-- <a class="nav-item nav-link text-dark"  routerLink="/register">Sign Up</a> -->
+
+        <button class="btn btn-outline-primary m-2
+        my-sm-0 px-4 bg-primary text-white" routerLink="/register"  >
+          Login
+        </button>
+        <button class="btn btn-outline-primary m-2 my-sm-0" (click)="signTo()" >
+          Sign Up
+        </button>
+        
+      </div>
+    </div>
+  </nav>
+</div>

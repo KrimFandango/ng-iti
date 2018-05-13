@@ -1,0 +1,23 @@
+@import "../../_variabl.scss";
+
+.weDo{
+    height:auto;
+    padding: 5% 0;
+    background: 
+    {
+        image: url("../../assets/images/bg_section.jpg");
+        size: cover;
+        position: center;
+    }
+    p{
+        color: $main-color;
+    }
+}
+.challenge{
+    height: auto;
+    padding: 5% 0;
+    
+}
+.happy{
+    height: auto;
+}
