@@ -9,16 +9,21 @@ import { DataService } from '../data.service';
 })
 export class LoginComponent implements OnInit {
   usersData: Array<object>;
+  flag: boolean;
   constructor(private query: DataService) {
     this.usersData = [];
     this.getUserData();
+    this.flag = false;
   }
 
   //============ get data from json file ==========
   getUserData(): void {
     let path: string = '../assets/userdata.json';
     this.query.getData(path).subscribe(
-      res => { this.usersData = res; },
+      res => {
+        this.usersData = res;
+        this.flag = true;
+      },
       err => { console.log(err); }
     );
   }
@@ -28,11 +33,14 @@ export class LoginComponent implements OnInit {
     console.log(data);
     for (var user of this.usersData) {
       // console.log(user.password);
-      if (data.value.email == user.email && data.value.password == user.password) {
-        console.log("Member!");
-      }
-      else {
-        console.log("not a member");
+      if (this.flag = true) {
+        // if (data.value.email == user.email && data.value.password == user.password) {
+        //   console.log("Member!");
+        //   //======== redirect to home page ==========
+        // }
+        // else {
+        //   console.log("not a member");
+        // }
       }
     }
   }

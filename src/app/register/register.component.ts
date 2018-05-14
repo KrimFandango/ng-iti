@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModel,NgForm } from '@angular/forms';
+import { NgModel, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -9,19 +9,15 @@ import { NgModel,NgForm } from '@angular/forms';
 export class RegisterComponent implements OnInit {
 
   constructor() { }
-  register(data:NgForm):void{
-    if(!data.valid){
+
+  register(data: NgForm): void {
+    if (!data.valid) {
       console.log("error");
-
     }
-    else{
-     console.log(data);
-     
+    else {
+      console.log(data);
     }
-   
-
   }
-
 
   ngOnInit() {
   }

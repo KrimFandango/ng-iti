@@ -9,10 +9,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // ================= app components ====================
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 // ================== services =========================
 import { DataService } from './data.service';
-import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
