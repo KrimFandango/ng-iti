@@ -29,7 +29,6 @@ export class ContactComponent implements OnInit {
     this.data.getData(path).subscribe(
       res => {
         this.contactData=res;
-        // console.log(res);
       },
       err => {
         console.log(err);
