@@ -14,6 +14,8 @@ import { RegisterComponent } from './register/register.component';
 
 // ================== services =========================
 import { DataService } from './data.service';
+import { CarouselComponent } from './carousel/carousel.component';
+import { HomeContentComponent } from './home-content/home-content.component';
 
 
 
@@ -22,7 +24,11 @@ import { DataService } from './data.service';
     AppComponent,
     ContactComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    
+    CarouselComponent,
+    
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,
