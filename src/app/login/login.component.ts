@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
+// import { Router } from '@angular/router';
+//============= service ==============
 import { DataService } from '../data.service';
 
 @Component({
@@ -7,13 +9,20 @@ import { DataService } from '../data.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
+
 export class LoginComponent implements OnInit {
-  usersData: Array<object>;
-  flag: boolean;
-  constructor(private query: DataService) {
+  usersData: Array<any>;
+  dataFlag: boolean;
+  userFlag: boolean;
+
+  constructor(
+    private query: DataService
+    // ,private toHome: Router
+  ) {
     this.usersData = [];
     this.getUserData();
-    this.flag = false;
+    this.dataFlag = false;
+    this.userFlag = false;
   }
 
   //============ get data from json file ==========
@@ -22,7 +31,7 @@ export class LoginComponent implements OnInit {
     this.query.getData(path).subscribe(
       res => {
         this.usersData = res;
-        this.flag = true;
+        this.dataFlag = true;
       },
       err => { console.log(err); }
     );
@@ -30,24 +39,26 @@ export class LoginComponent implements OnInit {
 
   loginFunc(data: NgForm): void {
     // ========== for loop on userData array to check ==========
-    console.log(data);
     for (var user of this.usersData) {
-      // console.log(user.password);
-      if (this.flag = true) {
-        // if (data.value.email == user.email && data.value.password == user.password) {
-        //   console.log("Member!");
-        //   //======== redirect to home page ==========
-        // }
-        // else {
-        //   console.log("not a member");
-        // }
+      if (this.dataFlag = true) {     //data come from server without errors
+        if (data.value.email === user.email && data.value.password === user.password) {
+          //======== redirect to home page ==========
+          // this.redirectToHome();
+        }
+        else {
+          this.userFlag = true;
+        }
       }
     }
+    if (this.userFlag == true) {
+      alert("Sorry, You're not a member!");
+    }
   }
-
-
+  // =============== redirect func ===========
+  // redirectToHome(): void {
+  //   this.toHome.navigate(['//']);
+  // }
 
   ngOnInit() {
   }
-
 }
