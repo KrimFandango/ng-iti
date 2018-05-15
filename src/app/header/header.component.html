@@ -1,25 +1,80 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
+</head>
+<body>
 <!-- Start Header Section -->
 <header>
   <div class="container">
-    <nav  class="menu d-flex justify-content-between align-items-baseline">
+    <nav  class="menu d-flex justify-content-between align-items-center">
       <div class="log">
-        <h3>Shop</h3>
+        <h3 routerLink=''>Shop</h3>
       </div>
-      <div class="d-flex align-items-baseline">
-        <ul class="d-flex px-3 align-items-baseline nav_list">
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Contact</a></li>
+      <div class="d-flex align-items-center">
+        <ul class="px-3 m-0 nav_list">
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="contact">Contact</a></li>
+          <li><a class="text-center" routerLink="login">Login</a></li>
+          <li><a class="text-center" routerLink="register">Register</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <section class="slider">
+  <section class="slider_section">
     <!-- <ngbd-carousel-basic></ngbd-carousel-basic> -->
+      <ngb-carousel *ngIf="images" class="slider">
+        <ng-template ngbSlide>
+          <img [src]="images[0]" alt="Random first slide">
+          <div class="carousel-caption">
+            <h3>{{sliderCaption.member1}}</h3>
+            <p>{{sliderCaption.member1Des}}</p>
+          </div>
+        </ng-template>
+      <ng-template ngbSlide>
+        <img [src]="images[1]" alt="Random second slide" class="img-responsive">
+        <div class="carousel-caption">
+            <h3>{{sliderCaption.member2}}</h3>
+            <p>{{sliderCaption.member2Des}}</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img [src]="images[2]" alt="Random third slide">
+        <div class="carousel-caption">
+            <h3>{{sliderCaption.member3}}</h3>
+            <p>{{sliderCaption.member3Des}}</p>
+        </div>
+      </ng-template> -->
+      <ng-template ngbSlide>
+          <img [src]="images[2]" alt="Random third slide">
+          <div class="carousel-caption">
+              <h3>{{sliderCaption.member4}}</h3>
+              <p>{{sliderCaption.member4Des}}</p>
+            </div>
+        </ng-template> -->
+        <ng-template ngbSlide>
+            <img [src]="images[2]" alt="Random third slide">
+            <div class="carousel-caption">
+                <h3>{{sliderCaption.member5}}</h3>
+                <p>{{sliderCaption.member5Des}}</p>
+                </div>
+          </ng-template> -->
+          <ng-template ngbSlide>
+              <img [src]="images[2]" alt="Random third slide">
+              <div class="carousel-caption">
+                  <h3>{{sliderCaption.member6}}</h3>
+                  <p>{{sliderCaption.member6Des}}</p>
+                    </div>
+            </ng-template> -->
+     </ngb-carousel>
   </section>
 </header>
 <!-- End Header Section -->
-
-
+</body>
+</html>
+<!-- <app-home></app-home> -->

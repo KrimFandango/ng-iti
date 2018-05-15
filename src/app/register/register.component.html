@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V14</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+      <form class="login100-form validate-form flex-sb flex-w" name="registrationForm" #registrationForm="ngForm" (ngSubmit)="register(registrationForm)" novalidate>
+        <span class="text-center login100-form-title mt-3 ml-3 p-b-32">
+          Register
+        </span>
+        <div class="wrap-input100 validate-input m-b-36 ml-3 form-group mt-3 ">
+          <input type="text" class="form-control input100" name="user_name"[(ngModel)]="user_name" placeholder="User Name" required>
+        </div>
+
+      <div class="wrap-input100 validate-input m-b-36 ml-3 form-group mt-3 ">
+        <input type="email" class="form-control input100"  name="email"[(ngModel)]="email" placeholder="Email" required>
+      </div>
+
+      <div class="wrap-input100 validate-input m-b-36 ml-3 form-group mt-3 ">
+        <input type="password" class="form-control input100" name="pass"[(ngModel)]="pass" placeholder="Password" required>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-36 ml-3 form-group mt-3 ">
+      <input type="password" class="form-control input100" name="rePass"[(ngModel)]="rePass" placeholder="Re-Type Your Password" required>
+    </div>
+
+      <div class="container-login100-form-btn">
+        <button [disabled]="!registrationForm.valid" class="btn btn-primary login100-form-btn">Sign Up</button>
+      </div>
+    </form>
+</div>
+</div>
+</div>

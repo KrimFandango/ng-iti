@@ -1,8 +1,9 @@
 
 .nav_list {
     list-style: none;
+    display: flex;
     li {
-        padding-right: 20px;
+        padding: 0 10px;
         a {
             text-decoration: none;
             font-weight: 100;
@@ -12,10 +13,52 @@
     }
 }
 
-.slider {
+.slider_section {
     height: calc(100vh - 50px);
     background-color: #345622;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    height: 20vh;;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        padding: 10px 0;
+    }
 
+}
+@media only screen and (max-width: 860px) {
+    .slider_section{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 573px) {
+   .slider_section {
+       display: none;
+   }
+   .menu {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       padding: 10px 0;
+   }
+   ul.nav_list {
+       flex-direction: column;
+       flex: 1 1; 
+   }
+   
+}
+    

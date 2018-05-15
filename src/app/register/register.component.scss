@@ -1,0 +1,60 @@
+.limiter{
+    margin:0 auto;
+  }
+  .login100-form-title{
+      font-family: Raleway-Medium;
+      font-size: 30px;
+      color: #555555;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+      display: block;
+  }
+  
+  .container-login100{
+    margin: 0 auto;
+    background-image: url(../../assets/images/product-single-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+  }
+  
+  
+  .wrap-login100 {
+      width: 560px;
+      background: #fff;
+      border-radius: 10px;
+      position: relative;
+  }
+  
+  .input100 {
+      font-family: Raleway-Medium;
+      color: #555555;
+      line-height: 1.2;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      background: transparent;
+      height: 55px;
+      padding: 0 25px 0 25px;
+    }
+  
+  .container-login100-form-btn{
+    text-align: center;
+  
+  }
+  
+  .btn{
+    width:30%;
+    margin-bottom: 10px;
+  }
+  

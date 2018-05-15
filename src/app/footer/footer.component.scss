@@ -1,0 +1,32 @@
+footer.container-fluid{
+    background-color: #EFEFEF;
+    * {
+        color: black;
+    }
+
+    p{
+        color: #828282;
+    }
+    
+    ul li {
+        list-style-type: none;
+    }
+
+    i {
+        color: #D1C286;
+        padding-right:7px;
+    }
+
+    span {
+        color: #D1C286;
+    }
+}
+
+.PRODUCTS {
+  img {
+      width:100%;
+      height: 300px;
+  }
+
+
+}
