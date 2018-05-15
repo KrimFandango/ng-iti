@@ -16,20 +16,9 @@ export class RegisterComponent implements OnInit {
     }
     else {
       console.log(data);
-      //register function
-      register(data: NgForm): void {
-        if(!data.valid) {  //check if the data isn't valid
-          console.log("error");
-        }
-    else{
-          console.log(data);
-
-        }
-      }
-
-      ngOnInit() {
-      }
 
     }
+  }
+  ngOnInit() {
   }
 }
