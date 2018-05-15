@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Bold.eot');
+    src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Bold.woff2') format('woff2'),
+        url('Raleway-Bold.woff') format('woff'),
+        url('Raleway-Bold.ttf') format('truetype'),
+        url('Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Regular.eot');
+    src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Regular.woff2') format('woff2'),
+        url('Raleway-Regular.woff') format('woff'),
+        url('Raleway-Regular.ttf') format('truetype'),
+        url('Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archer';
+    src: url('Archer-Semibold.eot');
+    src: url('Archer-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Archer-Semibold.woff2') format('woff2'),
+        url('Archer-Semibold.woff') format('woff'),
+        url('Archer-Semibold.ttf') format('truetype'),
+        url('Archer-Semibold.svg#Archer-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+

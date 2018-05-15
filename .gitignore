@@ -9,6 +9,7 @@
 # dependencies
 /node_modules
 /bower_components
+package-lock.json
 
 # IDEs and editors
 /.idea
@@ -43,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+ng_project_design.zip
+/ng_project_design
