@@ -1,0 +1,12 @@
+
+section{
+    
+    background-image:url('../../assets/lloyd_building_01hr_da_header.jpg');
+    background-size:cover;
+    height:100vh;
+}
+
+form{
+    z-index:3000;
+
+}
