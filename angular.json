@@ -21,8 +21,7 @@
       "styles": [
         "../bower_components/bootstrap/scss/bootstrap.scss",
         "scss/styles.scss",
-        "styles.scss",
-        "../node_modules/font-awesome/css/font-awesome.scss"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
