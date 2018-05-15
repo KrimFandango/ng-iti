@@ -1,0 +1,81 @@
+<div class="banner mb-5 ">
+ 
+<h2 class="text-center ">CONTACT US</h2>
+
+
+   <a href="index.html"> HOME</a>
+   <span>/</span>
+  <a href="index.html" class="seccolor fontstyle"> CONTACT</a>
+ 
+</div>
+<div class="container">
+
+<div class="row">
+  <div class="col-6">
+    <h2 class="fontstyle">Contact Info</h2>
+    <hr class="hrstyle mb-5">
+    <p class="fontstyle">There are many variations of passages of Lorem Ipsum available,
+       have a suffered alteration in some form, by injected humour, or randomised words 
+       which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+       you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+       <br>
+       <p class="fontstyle">There are many variations of passages of Lorem Ipsum available,
+          have a suffered alteration in some form, by injected humour, or randomised words 
+          which don't lookeven slightly believable. If you are going to use a passage of Lorem Ipsum,
+         you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+         <br>
+        <div class="row">
+        <div class="col-3">
+         <ul>
+           <li class="fontstyle">LOCATION  </li>
+           <br>
+            <li class="fontstyle">PHONE </li><br>
+            <li class="fontstyle">FAX  </li><br>
+            <li class="fontstyle">EMAIL</li><br>
+         </ul>
+        </div>
+        <div class="col-8">
+          <ul>
+             <li class="fontstyle">Sector10, Road05, Plot31,Uttara</li>
+             <br>
+             <li class="fontstyle">+880 123 456 789</li><br>
+             <li class="fontstyle">(626) 935-3026</li><br>
+            <li class="fontstyle">info@thethemspro.com</li><br>
+
+          </ul>
+        </div>
+        </div>
+  </div>
+ <div class="col-6">
+<h2 class="fontstyle "> Send Us Message</h2>
+<hr class="hrstyle mb-5">
+<form name="conatctusform" #conatctusform="ngForm" (ngForm)="conatactfunc(conatctusform)" novalidate >
+    <div class="col-12">
+      <input  class="form-control mb-3" type="text" placeholder="UserName" name="UserName" [(ngModel)]="UserName"/>
+    </div>
+    <div class="col-12">
+      <input  class="form-control mb-3" type="text" placeholder="E_mail" name="E_mail" [(ngModel)]="E_mail"/>
+    </div>
+  <div class="col-12">
+        <input class="form-control mb-3" type="text" placeholder="Subject" name="Subject" [(ngModel)]="Subject"/>
+</div>
+<div class="col-12">
+  <input  class="form-control mb-3" type="text" placeholder="Message" name="Message" [(ngModel)]="Message"/>
+</div>
+
+<div class="col-6">
+<button type="submit" class="btnstyle">Send Message</button>
+</div>
+
+</form>
+ </div>
+</div>
+
+
+</div>
+
+
+
+

@@ -21,7 +21,16 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+<<<<<<< HEAD
     "bootstrap": "^4.1.1",
+=======
+    "@ng-bootstrap/ng-bootstrap": "^2.0.0",
+<<<<<<< HEAD
+=======
+    "angular-google-map": "0.0.2",
+    "bootstrap": "^4.1.1",
+>>>>>>> ceac21fa63e7e959e9a144804b00572052af33c7
+>>>>>>> 45dade8041fe544b1ceb4066b8df7c4a51f481e6
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
@@ -33,6 +42,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "bootstrap": "^4.1.1",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
