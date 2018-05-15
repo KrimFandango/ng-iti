@@ -1,53 +1,67 @@
-
-
-
 <div class="container">
     <div class="row py-5 contact">
         <div class="col-12 col-sm-4 col-lg-4">
             <h3 class="py-3 hfont"> Contact Information</h3>
             <div class="row">
-              <span class="col-12 col-lg-3 pb-2"><i class="fa fa-map-marker"[ngClass]="'main-color'"></i></span>
-              <p class="col-12 col-lg-9 text-secondary pb-2">
-                  {{contactData.location}}
-              </p>
-            </div>
-            <div class="row" [ngClass]="'main-color'">
-                <span class="col-12 col-lg-3 pb-2"><i class="fa fa-phone"></i></span>
-                <p class="col-12 col-lg-9 pb-2 text-secondary">
-                        {{contactData.phone}}
+                <span class="col-12 col-lg-1 pb-2">
+                    <i class="fa fa-map-marker" [ngClass]="'main-color'"></i>
+                </span>
+                <p class="col-12 col-lg-11 text-secondary pb-2">
+                    {{contactData.location}}
                 </p>
             </div>
             <div class="row" [ngClass]="'main-color'">
-                <span class="col-12 col-lg-3 pb-2"><i class="fa fa-envelope"></i></span>
-                <p class="col-12 col-lg-9 pb-2 text-secondary">
-                        {{contactData.email}}
+                <span class="col-12 col-lg-1 pb-2">
+                    <i class="fa fa-phone"></i>
+                </span>
+                <p class="col-12 col-lg-11 pb-2 text-secondary">
+                    {{contactData.phone}}
                 </p>
             </div>
             <div class="row" [ngClass]="'main-color'">
-                <span class="col-12 col-lg-3 pb-2"><i class="fa fa-globe"></i></span>
-                <p class="col-12 col-lg-9 pb-2 text-secondary">
-                        {{contactData.world}}
+                <span class="col-12 col-lg-1 pb-2">
+                    <i class="fa fa-envelope"></i>
+                </span>
+                <p class="col-12 col-lg-11 pb-2 text-secondary">
+                    {{contactData.email}}
+                </p>
+            </div>
+            <div class="row" [ngClass]="'main-color'">
+                <span class="col-12 col-lg-1 pb-2">
+                    <i class="fa fa-globe"></i>
+                </span>
+                <p class="col-12 col-lg-11 pb-2 text-secondary">
+                    {{contactData.world}}
                 </p>
             </div>
         </div>
         <div class="col-12 col-lg-8 col-sm-8">
-            <h3  class="py-3 hfont">Get In Touch</h3>
+            <h3 class="py-3 hfont">Get In Touch</h3>
             <form class="row" name="contactForm" #contactForm="ngForm" (ngSubmit)="contact(contactForm)" novalidate>
-                <div class="col-12 pb-3 col-lg-6"><input class="form-control p-3" type="text" placeholder="Your firstname" name="fname" [(ngModel)]="dataForm.fname" required></div>
-                <div class="col-12 pb-3 col-lg-6"><input class="form-control p-3" type="text" placeholder="Your lastname" name="lname" [(ngModel)]="dataForm.lname" required></div>
-                <div class="col-12 pb-3 col-lg-12"><input class="form-control p-3" type="text" placeholder="Your email address" name="email" [(ngModel)]="dataForm.email" required email></div>
-                <div class="col-12 pb-3 col-lg-12"><input class="form-control p-3" type="text" placeholder="Your subject of this message" name="message" [(ngModel)]="dataForm.message"></div>
+                <div class="col-12 pb-3 col-lg-6">
+                    <input class="form-control p-3" type="text" placeholder="Your firstname" name="fname" [(ngModel)]="dataForm.fname" required>
+                </div>
+                <div class="col-12 pb-3 col-lg-6">
+                    <input class="form-control p-3" type="text" placeholder="Your lastname" name="lname" [(ngModel)]="dataForm.lname" required>
+                </div>
+                <div class="col-12 pb-3 col-lg-12">
+                    <input class="form-control p-3" type="email" placeholder="Your email address" name="email" [(ngModel)]="dataForm.email" #email="ngModel"
+                        required="required" id="mail">
+                    <span *ngIf="contactForm.submitted && !checkEmail(dataForm.email)" class="text-danger">
+                        Email not Correct
+                    </span>
+                </div>
+                <div class="col-12 pb-3 col-lg-12">
+                    <input class="form-control p-3" type="text" placeholder="Your subject of this message" name="message" [(ngModel)]="dataForm.message">
+                </div>
                 <div class="form-group col-sm-12 pb-3">
-                    <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="10" placeholder="Say something about us" name="comment" [(ngModel)]="dataForm.comment" required></textarea>
-                  </div>
-                  <div class="col-sm-12"><button class="btn btn-primary main-back border-0">Send message</button></div>
+                    <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="10" placeholder="Say something about us" name="comment"
+                        [(ngModel)]="dataForm.comment" required></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-primary main-back border-0">Send message</button>
+                </div>
             </form>
         </div>
     </div>
 </div>
-
-  
-
-
-
-

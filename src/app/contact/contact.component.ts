@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //form
-import { NgForm , NgModel } from '@angular/forms';
+import { NgForm, NgModel } from '@angular/forms';
 //service
 import { AboutDataService } from '../about-data.service';
 
@@ -11,31 +11,31 @@ import { AboutDataService } from '../about-data.service';
 })
 export class ContactComponent implements OnInit {
   //form variable
-  dataForm :object;
+  dataForm: object;
   //services variable
-  contactData:Array<object>;
+  contactData: Array<object>;
   constructor(
     private data : AboutDataService
   ) {
-    this.contactData=[];
+    this.contactData = [];
     this.getContactData();
-    this.dataForm={};
-   }
+    this.dataForm = {};
+  }
 
   //services
-  getContactData():void{
-    let path : string =' ./assets/data.json';
+  getContactData(): void {
+    let path: string = ' ./assets/data.json';
     this.data.getData(path).subscribe(
       res => {
-        this.contactData=res;
+        this.contactData = res;
         // console.log(res);
       },
       err => {
         console.log(err);
       },
-      ()=>{}
+      () => { }
     );
-    
+
   }
   
 // form
