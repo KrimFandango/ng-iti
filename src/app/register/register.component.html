@@ -1,0 +1,166 @@
+<!-- <section class="register pb-5">
+<div class="text pt-5 ">
+  <h2 class="text-white text-center" >SIGN UP</h2>
+</div>
+<div class="container pt-5 mb-5">
+
+  <form  name="registerForm" #registerForm="ngForm" (ngSubmit)="submit(registerForm)" novalidate>
+    <div class="form-row">
+      <div class="col-md-4 mb-3 pr-4 ">
+        <label class="text-white">First name</label>
+        <span class="text-danger font-weight-bold "  *ngIf="(firstName.touched && !firstName.valid) ||(!firstName.valid && registerForm.submitted)">
+          *
+        </span>
+        <input type="text" name="firstName" #firstName="ngModel" [(ngModel)]="userData.firstName" class="form-control rounded-0" id="validationCustom01" placeholder="First name" required>
+
+      </div>
+      <div class="col-md-4 mb-3 pr-4">
+        <label class="text-white">Last name</label>
+        <span class="text-danger font-weight-bold"  *ngIf="(lastName.touched && !lastName.valid) ||(!lastName.valid && registerForm.submitted)">
+           *
+        </span>
+        <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="userData.lastName" class="form-control rounded-0"  placeholder="Last name"  required>
+
+      </div>
+      <div class="col-md-4 mb-3">
+        <label class="text-white">Username</label>
+        <span class="text-danger font-weight-bold"  *ngIf="(userName.touched && !userName.valid) ||(!userName.valid && registerForm.submitted)">
+          *
+        </span>
+        <div class="input-group">
+
+          <input type="text" name="userName" #userName="ngModel" [(ngModel)]="userData.userName" class="form-control rounded-0"  placeholder="Username"  required>
+
+        </div>
+
+      </div>
+
+      <div class="col-12 mb-3 mt-3">
+        <label class="text-white">Email</label>
+        <span class="text-danger font-weight-bold"  *ngIf="(Email.touched && !Email.valid) ||(!Email.valid && registerForm.submitted)">
+          *
+        </span>
+        <input type="text" name="Email" #Email="ngModel" [(ngModel)]="userData.Email" class="form-control rounded-0"  placeholder="example@info.com"  required>
+
+      </div>
+      <div class="col-12 mb-3 mt-3">
+        <label class="text-white">Password</label>
+        <span class="text-danger  font-weight-bold"  *ngIf="(Password.touched && !Password.valid) ||(!Password.valid && registerForm.submitted)">
+          *
+        </span>
+        <input type="password" name="Password" #Password="ngModel" [(ngModel)]="userData.Password" class="form-control rounded-0"  placeholder="• • • • • • •"  required>
+      </div>
+
+      <div class="form-group mt-3">
+        <div class="form-check pl-1">
+          <input  type="checkbox" name="agree" #agree="ngModel" [(ngModel)]="userData.agree" value="false"  required>
+          <label class="text-white pl-2">
+            Agree to terms and conditions
+          </label>
+          <span class="text-danger  font-weight-bold"  *ngIf="(!agree.dirty && registerForm.submitted) || (!agree.valid && registerForm.submitted)">
+            *
+          </span>
+
+        </div>
+
+
+      </div>
+    </div>
+  <button  class="btn btn-primary btn-lg rounded-0">Submit Form</button>
+
+    </form>
+</div>
+</section> -->
+
+<!-- /******************************** text-img section ***************************/ -->
+
+<!-- <section class=" web-development-agency pt-5 pb-5">
+  <div class="container ">
+  <div class="row">
+    <div class="col-md-8 col-12">
+      <h3 class="pb-3 text-white">WEB DEVELOPMENT AGENCY</h3>
+      <p class="text-white pt-5">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna
+       </p>
+      <p class="text-white">
+       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+       laboris nisi ut aliquip ex ea commodo consequat. Duis
+     </p>
+       <p class="text-white">
+         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+       </p>
+       <p class="text-white">
+       fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="text-white">
+        fugiat nulla pariatur.
+         Excepteur sint occaecat cupidatat non proident, sunt in
+         culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p class="text-white">
+         fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
+  <div class="col-md-4 col-12 ">
+    <div class="row pr-0 mb-4">
+      <div class="col-12 right-img">
+      </div>
+    </div>
+    <div class="row pr-0 d-flex justify-content-between">
+
+      <div class="col-5 img1">
+      </div>
+      <div class="col-5  img2">
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+</section> -->
+<!-- /********************************* our team section *********************************/ -->
+<section class="what-we-do">
+  <div class="container pt-5 pb-5">
+    <div class="text">
+      <h1 class="pt-5 mt-5 font-weight-bold">WHAT WE DO</h1>
+      <h5 class="text-muted pt-3 pb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       exercitation ullamco laboris nisi ut aliquip ex ea commodo</h5>
+    </div>
+    <div class="card-deck ">
+      <div class="card rounded-0">
+        <div class="card-body ">
+          <h4 class="card-title text-center font-weight-bold pt-2 pb-2">Mobile Development</h4>
+          <p class="card-text text-primary text-center pt-5 pb-2">VIEW SERVICE</p>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <div class="card-body">
+          <h4 class="card-title text-center font-weight-bold pt-2 pb-2">Database Development</h4>
+          <p class="card-text text-primary text-center pt-5 pb-2">VIEW SERVICE</p>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <div class="card-body">
+          <h4 class="card-title text-center font-weight-bold pt-2 pb-2">Social Marketing</h4>
+          <p class="card-text text-primary text-center pt-5 pb-2">VIEW SERVICE</p>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <div class="card-body">
+          <h4 class="card-title text-center font-weight-bold pt-2 pb-2">Web Development</h4>
+          <p class="card-text text-primary text-center pt-5 pb-2">VIEW SERVICE</p>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <div class="card-body">
+          <h4 class="card-title text-center font-weight-bold pt-2 pb-2">E-commerce Development</h4>
+          <p class="card-text text-primary text-center pt-5 pb-2">VIEW SERVICE</p>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
