@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -6,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+public dataRegister:object;
+    
+  constructor() {
+      
+     this.dataRegister = {};
+  }
 
-  constructor() { }
-
+    registerForm(data:NgForm){
+        if(!data.valid){
+            console.log("error");
+        }
+        else{
+            console.log(data);
+            console.log(this.dataRegister)
+        }
+    }
   ngOnInit() {
   }
 

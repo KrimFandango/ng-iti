@@ -1,3 +1,41 @@
-<p>
-  sign-up works!
-</p>
+<div class="container">
+   <div class="row">
+    <div class="col-sm-12">
+        <form name="register" #register="ngForm" (ngSubmit)="register(registerForm)" novalidate>
+         <div class="form-group">
+             <label for="exampleInputEmail">user name</label>
+             <input type="text" class="form-control" placeholder="enter your name" name="userName"
+             #userName="ngModel" [(ngModel)]="dataRegister.userName" required>
+             <div class="alert alert-danger mb-2" role="alert" *ngIf="userName.touched && !userName.valid">
+               username is required
+              </div> 
+         </div>   
+         
+         <div class="form-group">
+             <label for="exampleInputEmail">Email</label>
+             <input type="email" class="form-control" placeholder="enter your email" name="email" #email="ngModel" [(ngModel)]="dataRegister.email" required>
+<!--
+             <div class="alert alert-danger mb-2" role="alert" *ngIf="email.touched && !email.valid">
+                Email is required
+              </div> 
+-->
+         </div>  
+         
+         <div class="form-group">
+             <label for="exampleInputEmail">password</label>
+             <input type="password" class="form-control" placeholder="enter your password" name="password" [(ngModel)]="dataRegister.password" required>
+           <div class="alert alert-danger mb-2" role="alert" *ngIf="userName.touched && !userName.valid">
+               email is required
+              </div>  
+         </div>   
+         
+         <div class="form-check">"
+             <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+             <label for="exampleCheck1" class="form-check-label">agree with the rules and regulation</label>
+         </div>
+        
+         <button type="submit" [disabled]="!register.valid">Submit</button>
+        </form>
+    </div>
+   </div>
+</div>
