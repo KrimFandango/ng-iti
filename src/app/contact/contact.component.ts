@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 //form
-import { NgForm , NgModel } from '@angular/forms';
+import { NgForm, NgModel } from '@angular/forms';
 //service
-import{ DataService } from'../data.service';
+import { DataService } from '../data.service';
 // import {NgModel} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -12,51 +12,67 @@ import{ DataService } from'../data.service';
 })
 export class ContactComponent implements OnInit {
   //form variable
-  dataForm :object;
+  dataForm: object;
   //services variable
-  contactData:Array<object>;
+  contactData: Array<object>;
   constructor(
-    private data : DataService
+    private data: DataService
   ) {
-    this.contactData=[];
+    this.contactData = [];
     this.getContactData();
-    this.dataForm={};
-   }
+    this.dataForm = {};
+  }
 
   //services
-  getContactData():void{
-    let path : string =' ./assets/data.json';
+  getContactData(): void {
+    let path: string = ' ./assets/data.json';
     this.data.getData(path).subscribe(
       res => {
-        this.contactData=res;
+        this.contactData = res;
         // console.log(res);
       },
       err => {
         console.log(err);
       },
-      ()=>{}
+      () => { }
     );
-    
+
   }
-  
 
-// form
-
-contact( data : NgForm ):void{
-  if(!data.valid)
-  {
-    console.log("error");
-  } 
-  else{
-    console.log(data);
-    console.log(this.dataForm);
+//email validation
+  x(d) {
+    console.log(d)
+    return JSON.stringify(d)
   }
-  
 
-}
-  
-  
-  
+  checkEmail(email): boolean {
+    let pattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    console.log(pattern.test(email))
+    if(pattern.test(email)==false)
+    {
+      var elem = document.getElementById('mail');
+      elem.classList.add('border-danger');
+    }
+    return pattern.test(email);
+  }
+
+
+  // form
+
+  contact(data: NgForm): void {
+    if (!data.valid) {
+      console.log("error");
+    }
+    else {
+      console.log(data);
+      console.log(this.dataForm);
+    }
+
+
+  }
+
+
+
   ngOnInit() {
   }
 

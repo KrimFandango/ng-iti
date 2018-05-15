@@ -11,7 +11,6 @@ export class DataService {
    getData( path : string ): Observable < any > {
 
     return this.http.get( path );
-
    }
 
 }
