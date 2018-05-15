@@ -13,13 +13,17 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-// ================== services =========================
-import { DataService } from './data.service';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { HomeContentComponent } from './home-content/home-content.component';
+
+// ================== services =========================
+import { DataService } from './data.service';
+
+
 
 
 const appRoutes: Routes = [
@@ -40,7 +44,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,    
+    CarouselComponent,   
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,
