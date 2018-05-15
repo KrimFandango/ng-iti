@@ -11,12 +11,12 @@
               <div class="mb-3">
                 <label class="d-block">Email:*</label>
                 <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                       [(ngModel)]="dataObj.email" required class="form-control">
-                <div *ngIf="f.controls.email.invalid && f.submitted">
-                  <span *ngIf="f.controls.email.errors.required">
+                       [(ngModel)]="dataObj.email" required class="form-control" #email="ngModel">
+                <div *ngIf="email.invalid && f.submitted">
+                  <span *ngIf="email.errors.required">
                     email is required
                   </span>
-                  <span *ngIf="f.controls.email.errors.pattern">
+                  <span *ngIf="email.errors.pattern">
                     email format is not valid
                   </span>
                 </div>                    
@@ -24,12 +24,12 @@
               <div class="mb-3">
                 <label class="d-block">Username:*</label>
                 <input type="text" id="username" name="username" minlength="4"
-                       [(ngModel)]="dataObj.username" required class="form-control">
-                <div *ngIf="f.controls.username.invalid && f.submitted">
+                       [(ngModel)]="dataObj.username" required class="form-control" #username="ngModel">
+                <div *ngIf="username.invalid && f.submitted">
                   <span *ngIf="f.controls.username.errors.required">
                     username is required
                   </span>
-                  <span *ngIf="f.controls.username.errors.minlength">
+                  <span *ngIf="username.errors.minlength">
                     username must be at least 4 characters
                   </span>
                 </div> 
@@ -37,16 +37,17 @@
               <div class="mb-3">
                 <label class="d-block">Password:*</label>
                 <input type="password" id="password" name="password" [(ngModel)]="dataObj.password" required
-                       minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control">
-                <div *ngIf="f.controls.password.invalid && f.submitted">
-                  <span *ngIf="f.controls.password.errors.required">
+                       minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control"
+                       #password="ngModel">
+                <div *ngIf="password.invalid && f.submitted">
+                  <span *ngIf="password.errors.required">
                     password is required
                   </span>
-                  <span *ngIf="f.controls.password.errors.minlength; else checkPattern">
+                  <span *ngIf="password.errors.minlength; else checkPattern">
                     password should be at least 8 characters
                   </span>
                   <ng-template #checkPattern> 
-                    <span *ngIf="f.controls.password.errors.pattern">
+                    <span *ngIf="password.errors.pattern">
                       password should contain uppercase, lowercase and number
                     </span>
                   </ng-template> 
@@ -55,12 +56,12 @@
               <div class="mb-3">
                 <label class="d-block">Confirm password:*</label>
                 <input  type="password" id="passwordRetyped" name="passwordRetyped" (input)="resetFlag()"
-                        [(ngModel)]="dataObj.passwordRetyped" required class="form-control">
+                        [(ngModel)]="dataObj.passwordRetyped" required class="form-control" #retyped="ngModel">
                 <div *ngIf="f.submitted">
-                  <span *ngIf="f.controls.passwordRetyped.invalid && f.controls.passwordRetyped.errors.required">
+                  <span *ngIf="retyped.invalid && retyped.errors.required">
                     retyping password is required
                   </span>   
-                  <span *ngIf="f.controls.passwordRetyped.valid && invalid_match">
+                  <span *ngIf="retyped.valid && invalid_match">
                     password fields are not matched
                   </span>
                 </div>

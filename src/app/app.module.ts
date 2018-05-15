@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 // components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,7 +25,7 @@ const routes: Routes = [
    { path: '', component: HomeComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'About', component: AboutusComponent },
-    {path:'Contact us',component:ContactUsComponent},
+  { path: 'Contact us', component: ContactUsComponent },
   { path: 'Login', component: LoginComponent }
 ];
 @NgModule({
@@ -41,11 +42,11 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    AngularFontAwesomeModule,
     NgbModule.forRoot(),
     HttpClientModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    AngularFontAwesomeModule
   ],
   providers: [
     FormsModule,
