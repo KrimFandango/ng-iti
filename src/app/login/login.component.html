@@ -8,20 +8,26 @@
         <form name="loginForm" #loginForm="ngForm" (ngSubmit)="loginFunc(loginForm)" novalidate>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address*</label>
-            <input type="email" name="email" required [(ngModel)]="email" class="form-control border border-secondary rounded-0" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
+            <input type="email" name="email" #user="ngModel" required [(ngModel)]="email" class="form-control border border-secondary rounded-0"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
             <!-- error message -->
-            <!-- <div *ngIf="user.invalid && (user.dirty || user.touched)">
+            <div *ngIf="user.invalid && (user.dirty || user.touched)">
               <div class="text-danger" *ngIf="user.errors.required">
-                Email is required
+                Email is required!
               </div>
-            </div> -->
+            </div>
 
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password*</label>
-            <input type="password" name="password" required [(ngModel)]="password" class="form-control border border-secondary rounded-0"
+            <input type="password" name="password" #pass="ngModel" required [(ngModel)]="password" class="form-control border border-secondary rounded-0"
               id="exampleInputPassword1">
+            <!-- error message -->
+            <div *ngIf="pass.invalid && (pass.dirty || pass.touched)">
+              <div class="text-danger" *ngIf="pass.errors.required">
+                Password is required!
+              </div>
+            </div>
           </div>
           <div class="text-center">
             <button type="submit" class="btn border border-dark rounded-0 pr-3 pl-3">Login</button>
