@@ -18,8 +18,14 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+<<<<<<< HEAD
       "styles": ["../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.scss"
+=======
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+>>>>>>> d7b7fc1c6b24a5906e50f279ebe62194ce03a300
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
