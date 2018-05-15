@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
-// import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 //============= service ==============
 import { DataService } from '../data.service';
 
@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private query: DataService
-    // ,private toHome: Router
+    , private toHome: Router
   ) {
     this.usersData = [];
     this.getUserData();
@@ -37,27 +37,30 @@ export class LoginComponent implements OnInit {
     );
   }
 
+  // =============== redirect func ===========
+  redirectToHome(): void {
+    this.toHome.navigate(['//']);
+  }
+
   loginFunc(data: NgForm): void {
     // ========== for loop on userData array to check ==========
     for (var user of this.usersData) {
       if (this.dataFlag = true) {     //data come from server without errors
         if (data.value.email === user.email && data.value.password === user.password) {
           //======== redirect to home page ==========
-          // this.redirectToHome();
+          this.redirectToHome();
+          this.userFlag = true;
         }
         else {
-          this.userFlag = true;
+          console.log('not a member');
         }
       }
     }
-    if (this.userFlag == true) {
+    if (!this.userFlag) {
       alert("Sorry, You're not a member!");
     }
   }
-  // =============== redirect func ===========
-  // redirectToHome(): void {
-  //   this.toHome.navigate(['//']);
-  // }
+
 
   ngOnInit() {
   }

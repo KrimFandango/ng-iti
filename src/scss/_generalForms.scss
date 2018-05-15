@@ -5,12 +5,12 @@ section{
 	padding: 50px 0px;
 }
 button {
-	background-color: #f28633;
+	background-color: $mainColor;
 	border: none;
-	border-color: #f28633;
+	border-color: $mainColor;
 }
 button:hover {
-	background-color: #282828;
+	background-color: $secondaryColor;
 	color: white;
 	
 }
