@@ -1,43 +1,47 @@
-
-
-<section class="contactUs pt-3">
-    <div class="container mb-5">
+<section class="contactUs">
+    <div class="container">
         <div class="row  contact">
             <div class="col-12 d-flex justify-content-center ">
-                <h3 class="pb-3 text-center">Contact Us</h3>
+                <h1 class="text-center mb-5">Contact Us</h1>
             </div>
             <div class="col-12">
-                <form class="row d-flex justify-content-center" name="contactForm" #contactForm="ngForm" (ngSubmit)="contact(contactForm)" novalidate>
+                <form class="row d-flex justify-content-center" name="contactForm" #contactForm="ngForm" (ngSubmit)="contact(contactForm)"
+                    novalidate>
                     <div class="col-md-8 col-12 pb-3 ">
                         <label for="fname">Your firstname</label>
-                        <input class="form-control p-3" type="text"  name="fname" id="fname" [(ngModel)]="dataForm.fname" required>
+                        <input class="form-control border border-secondary rounded-0" type="text" name="fname" id="fname" [(ngModel)]="dataForm.fname"
+                            required>
                     </div>
                     <div class="col-md-8 col-12 pb-3 ">
                         <label for="lname">Your lastname</label>
-                        <input class="form-control p-3" type="text" name="lname" id="lname" [(ngModel)]="dataForm.lname" required>
+                        <input class="form-control border border-secondary rounded-0" type="text" name="lname" id="lname" [(ngModel)]="dataForm.lname"
+                            required>
                     </div>
                     <div class="col-md-8 col-12 pb-3 ">
                         <label for="email">Enter your email </label>
-                        <input class="form-control p-3" type="text"  name="email" id="email" [(ngModel)]="dataForm.email" required email>
+                        <input class="form-control border border-secondary rounded-0" type="text" name="email" id="email" [(ngModel)]="dataForm.email"
+                            required email>
                     </div>
                     <div class="col-md-8 col-12 pb-3 ">
                         <label for="email">Enter your message </label>
-                        <textarea class="form-control p-3"  rows="10"  name="message" id="message" [(ngModel)]="dataForm.message" required></textarea>
+                        <textarea class="form-control border border-secondary rounded-0" rows="5" name="message" id="message" [(ngModel)]="dataForm.message"
+                            required></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <button class="btn btn-primary  border-0">Send Message</button>
+                        <button class="btn border border-dark rounded-0 pr-3 pl-3">Send Message</button>
                     </div>
                 </form>
-            </div>    
+            </div>
         </div>
     </div>
 
 
-
+</section>
+<section>
 
     <div class="container-fluid contact-info ">
         <div class="row pt-5 pb-5 ">
-            <div class="col-md-4 col-12 text-center pb-5 " *ngFor="let x of contactData" >
+            <div class="col-md-4 col-12 text-center pb-5 " *ngFor="let x of contactData">
                 <div class="mb-4">
                     <img [src]="x.img">
                 </div>
@@ -48,11 +52,3 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-

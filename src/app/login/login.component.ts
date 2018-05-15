@@ -34,13 +34,13 @@ export class LoginComponent implements OnInit {
     for (var user of this.usersData) {
       // console.log(user.password);
       if (this.flag = true) {
-        if (data.value.email == user.email && data.value.password == user.password) {
-          console.log("Member!");
-          //======== redirect to home page ==========
-        }
-        else {
-          console.log("not a member");
-        }
+        // if (data.value.email == user.email && data.value.password == user.password) {
+        //   console.log("Member!");
+        //   //======== redirect to home page ==========
+        // }
+        // else {
+        //   console.log("not a member");
+        // }
       }
     }
   }
