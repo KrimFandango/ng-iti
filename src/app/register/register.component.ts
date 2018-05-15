@@ -13,6 +13,7 @@ export class RegisterComponent implements OnInit {
   register(data: NgForm): void {
     if (!data.valid) {
       console.log("error");
+      console.log(data);
     }
     else {
       console.log(data);

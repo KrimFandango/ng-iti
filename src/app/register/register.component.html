@@ -1,52 +1,67 @@
+
 <section>
-  <div class="container">
-    <div class="row justify-content-md-center pt-5">
-      <div class="col-md-8 col-sm-6">
-        <h1 class="text-center mb-5">Creat Account</h1>
-        <form name="registerForm" #registerForm="ngForm" (ngSubmit)="register(registerForm)" novalidate>
-          <div class="row">
-
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="formGroupExampleInput1">First Name*</label>
-                <input type="text" class="form-control border border-secondary rounded-0" id="formGroupExampleInput1" required name="user_firstname"
-                  [(ngModel)]="user_firstname">
-                <span *ngIf="registerForm.submitted==true && registerForm.valid==false "> First name is required</span>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="formGroupExampleInput2">Last Name*</label>
-                <input type="text" class="form-control border border-secondary rounded-0" id="formGroupExampleInput2" required name="user_lastname"
-                  [(ngModel)]="user_lastname">
-                <span *ngIf="registerForm.submitted==true && registerForm.valid==false "> Lastname is required</span>
-              </div>
-            </div>
-
+    <div class="container">
+       <div class="row justify-content-md-center pt-5">
+          <div class="col-md-8 col-sm-6">
+             <h1 class="text-center mb-5">Creat Account</h1>
+             <form name="registerForm" #registerForm="ngForm" (ngSubmit)="register(registerForm)" novalidate>
+             <div class="row">
+                <div class="col-sm-6">
+                   <div class="form-group">
+                      <label for="exampleInputname1">First name*</label>
+                      <input type="text" class="form-control border border-secondary rounded-0" id="exampleInputname1" required name="user_firstname"
+                      [(ngModel)]="user_firstname"  #fname="ngModel">
+                      <div *ngIf="fname.invalid && (fname.dirty || fname.touched)"
+                         class="text-danger">
+                         <div *ngIf="fname.errors.required">
+                            First name is required.
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-sm-6">
+                   <div class="form-group">
+                      <label for="exampleInputname2">Last name*</label>
+                      <input type="text" class="form-control border border-secondary rounded-0" id="exampleInputname2" required name="user_firstname"
+                      [(ngModel)]="user_lastname"  #lname="ngModel">
+                      <div *ngIf="lname.invalid && (lname.dirty || lname.touched)"
+                         class="text-danger">
+                         <div *ngIf="lname.errors.required">
+                            Last name is required.
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="exampleInputEmail1">Email*</label>
+                <input type="password" class="form-control border border-secondary rounded-0" id="exampleInputEmail1" required name="user_password"
+                [(ngModel)]="user_Email"  #Email="ngModel">
+                <div *ngIf="Email.invalid && (Email.dirty || Email.touched)"
+                   class="text-danger">
+                   <div *ngIf="Email.errors.required">
+                      Email is required.
+                   </div>
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="exampleInputPassword1">Password*</label>
+                <input type="password" class="form-control border border-secondary rounded-0" id="exampleInputPassword1" required name="user_password"
+                [(ngModel)]="user_password"  #password="ngModel">
+                <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                   class="text-danger">
+                   <div *ngIf="password.errors.required">
+                      Password is required.
+                   </div>
+                </div>
+             </div>
+             <div class="text-center">
+                <button class="btn border border-dark rounded-0 pr-3 pl-3">Register</button>
+             </div>
+             </form>
           </div>
-
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email Address*</label>
-            <input type="email" class="form-control border border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp"
-              required name="user_email" [(ngModel)]="user_email">
-            <span *ngIf="registerForm.submitted==true && registerForm.valid==false "> Email is required</span>
-
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password*</label>
-            <input type="password" class="form-control border border-secondary rounded-0" id="exampleInputPassword1" required name="user_password"
-              [(ngModel)]="user_password">
-            <span *ngIf="registerForm.submitted==true && registerForm.valid==false "> Password is required</span>
-
-          </div>
-          <div class="text-center">
-            <button class="btn border border-dark rounded-0 pr-3 pl-3">Register</button>
-          </div>
-        </form>
-
-      </div>
+       </div>
     </div>
-  </div>
-</section>
+ </section>
+ 
+ 
