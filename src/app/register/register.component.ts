@@ -12,10 +12,7 @@ userData:object;
   }
   submit(data:NgForm):void
   {
-    if(data.valid){
-      console.log(this.userData);
-      console.log(data);
-    }
+
   }
   ngOnInit() {
   }
