@@ -1,69 +1,82 @@
 <div class="container py-5">
-  <div class="row">
-    <div class="col-3 leftcol">
-        <img src ="{{dataprofile.img}}" class="py-3">
-        <button class="col-12">Add friend</button>
-        <button class="col-12" (click)="getProfileData()">Show Data</button>
-        <button class="col-12">Report User</button>
-        <button class="col-12">Send a message</button>
-        <button class="col-12">View Activity</button>
+    <div class="row">
+        <div class="col-3 leftcol">
+            <img src="{{dataprofile.img}}" class="py-3">
+            <button class="col-12">Add friend</button>
+            <button class="col-12" (click)="getProfileData()">Show Data</button>
+            <button class="col-12">Report User</button>
+            <button class="col-12">Send a message</button>
+            <button class="col-12">View Activity</button>
 
+        </div>
+        <div class="col-6 middlecol">
+            <h2>Ahmed Ghoraba</h2>
+            <div class="back py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Brief Description</h6><span>{{dataprofile.Brief}}</span></div>
+            <div class="py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Location</h6><span>{{dataprofile.location}}</span></div>
+            <div class="back py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Interests</h6><span>{{dataprofile.Interests}}</span></div>
+            <div class="py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Skills</h6><span></span>{{dataprofile.Skills}}</div>
+            <div class="back py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Contact Email</h6><span>{{dataprofile.contact}}</span></div>
+            <div class="py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Telephone</h6><span>{{dataprofile.Telephone}}</span></div>
+            <div class="back py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Mobile phone</h6><span>{{dataprofile.Mobile}}</span></div>
+            <div class="py-2 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Website</h6><span>{{dataprofile.website}}</span></div>
+            <div class="back py-2 mb-5 d-flex pl-3">
+                <h6 class="mb-0 pr-3">Twitter username</h6><span>{{dataprofile.twitter}}</span></div>
+            <div class="back py-2  d-flex pl-3">
+                <h6 class="mb-0 pr-3">About me</h6>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque voluptatum animi voluptates asperiores esse excepturi magni hic perferendis incidunt quos iure, minima consequatur veritatis perspiciatis impedit, accusamus enim minus!</p>
+            </div>
+        </div>
+        <div class="col-3 rightcol">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Blogs
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="mb-0">No blog posts</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Activity
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="mb-0">No Activity</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Pages
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="mb-0">No Pages Created yet</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bookmarks
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="mb-0">No Bookmarks</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-6 middlecol">
-        <h2>Ahmed Ghoraba</h2>
-        <div class="back py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Brief Description</h6><span>{{dataprofile.Brief}}</span></div>
-        <div class="py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Location</h6><span>{{dataprofile.location}}</span></div>
-        <div class="back py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Interests</h6><span>{{dataprofile.Interests}}</span></div>
-        <div class="py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Skills</h6><span></span>{{dataprofile.Skills}}</div>
-        <div class="back py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Contact Email</h6><span>{{dataprofile.contact}}</span></div>
-        <div class="py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Telephone</h6><span>{{dataprofile.Telephone}}</span></div>
-        <div class="back py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Mobile phone</h6><span>{{dataprofile.Mobile}}</span></div>
-        <div class="py-2 d-flex pl-3"><h6 class="mb-0 pr-3">Website</h6><span>{{dataprofile.website}}</span></div>
-        <div class="back py-2 mb-5 d-flex pl-3"><h6 class="mb-0 pr-3">Twitter username</h6><span>{{dataprofile.twitter}}</span></div>
-        <div class="back py-2  d-flex pl-3"><h6 class="mb-0 pr-3">About me</h6></div>
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque voluptatum animi voluptates asperiores esse excepturi magni hic perferendis incidunt quos iure, minima consequatur veritatis perspiciatis impedit, accusamus enim minus!</p></div>
-    </div>
-    <div class="col-3 rightcol">
-      <div class="card mb-3">
-        <div class="card-header">
-          Blogs
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p class="mb-0">No blog posts</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="card-header">
-          Activity
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p class="mb-0">No Activity</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="card-header">
-          Pages
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p class="mb-0">No Pages Created yet</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="card-header">
-          Bookmarks
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p class="mb-0">No Bookmarks</p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
