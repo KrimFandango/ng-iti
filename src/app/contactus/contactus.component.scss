@@ -1,0 +1,64 @@
+
+.map{ background-image: url(ZwYkYsp.png);
+    height: 20%;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 70px;
+}
+
+
+.banner{
+    background-image: url(banner-bg.jpg);
+    height: 20%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 70px;
+}
+
+.banneroverlay{
+    background: black;
+   
+}
+.seccolor{
+    color: #f6b60b ;
+    font: 400 14px ;
+}
+ul{
+    list-style: none;
+}
+ol{
+    list-style: none;
+    display: inline-block;
+
+}
+a {
+
+    color:black
+}
+.fontstyle{
+    font-family: "Oswald", sans-serif;
+    font-variant: small-caps;
+}
+.overlay{
+    background-color:rgba(0,0, 0 ,.8);
+    
+
+}
+.hrstyle{
+    height: 2px;
+    width: 80px;
+    background: #f6b60b;
+    margin: 5px;
+   
+}
+.btnstyle{
+    background:#f6b60b;
+    border: 1px solid #eaeaea;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
