@@ -1,67 +1,7 @@
 {
-<<<<<<< HEAD
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "project": {
         "name": "Project"
-=======
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "project": {
-    "name": "Project"
-  },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
-<<<<<<< HEAD
-      "styles": ["../node_modules/bootstrap/dist/css/bootstrap.min.css",
-=======
-<<<<<<< HEAD
-      "styles": ["../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.scss"
-=======
-      "styles": [
-<<<<<<< HEAD
-    "../node_modules/bootstrap/dist/css/bootstrap.min.css",  
-=======
-<<<<<<< HEAD
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css" ,
-=======
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
->>>>>>> 45dade8041fe544b1ceb4066b8df7c4a51f481e6
->>>>>>> 37fabe23225aec1ce151b273b8596290c546c82c
->>>>>>> fec52acdf00a400875dde3c26d06003283742858
-        "styles.css"
->>>>>>> d7b7fc1c6b24a5906e50f279ebe62194ce03a300
-      ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
-    }
-  ],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
-  "lint": [
-    {
-      "project": "src/tsconfig.app.json",
-      "exclude": "**/node_modules/**"
->>>>>>> 29af214a89d649d26037f732892bcff43d6fe8ca
     },
     "apps": [{
         "root": "src",
@@ -118,13 +58,4 @@
         "styleExt": "scss",
         "component": {}
     }
-<<<<<<< HEAD
 }
-=======
-  },
-  "defaults": {
-    "styleExt": "scss",
-    "component": {}
-  }
-}
->>>>>>> 29af214a89d649d26037f732892bcff43d6fe8ca
