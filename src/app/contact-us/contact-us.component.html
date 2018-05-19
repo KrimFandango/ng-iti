@@ -1,0 +1,37 @@
+
+<section id="ContactUs" class="text-white">  
+  <div class="container p-5">
+      <h2 class="text-center text-white">CONTACT US</h2>      
+    <div class="row p-5">
+    <div class="col-sm-6">
+      <p class="text-white pt-4">
+        Touge races, called Battles,
+         are typically run at night between  cars in either 
+         Cat and mouse or Initial rules.
+         A series of matches are run with a lead and a chase driver starting 
+         either side by side or bumper to bumper at the starting point.
+          If the lead driver manages to create a noticeable gap between their 
+          car and the chase driver by the finish line Today!.
+    </p>
+    </div>
+    <div class="col-sm-6">
+<form name="ContactUs" #ContactUs="ngForm" (ngSubmit)="contact(ContactUs)" notvalid>
+    <label for="Name">Name</label>
+    <input type="text" class="form-control mb-3" id="Name"  name="User_name" [(ngModel)]="FormData.User_name" placeholder="Enter Name.." required/>
+
+    <label for="Number">Number</label>
+    <input type="text" class="form-control mb-3" id="Number"  name="User_number"[(ngModel)]="FormData.User_number" placeholder="Enter Number.." required/>
+
+    <label for="Email">Email</label>
+    <input type="email" class="form-control mb-3" id="Email"  name="User_email" [(ngModel)]="FormData.User_email" placeholder="Enter Email.." required/>
+
+    <label for="Message">Message</label>
+    <textarea class="form-control mb-3" id="Message"  name="User_msg" [(ngModel)]="FormData.User_msg" placeholder="Enter Message here.." rows="3" required></textarea>
+
+    <button class="btn text-white" type="submit" [disabled]="!ContactUs.valid">SEND</button>
+
+  </form>   
+    </div>
+    </div>
+  </div>
+  </section>
